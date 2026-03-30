@@ -1,0 +1,1 @@
+python3 ../src/step1/preprocess_axtFiltMerge.py ./synteny/Conserved.Segments.bed   ./AXT/ ./processed_AXT/ 1000 0 1 &> preprocess.log

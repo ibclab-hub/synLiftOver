@@ -1,0 +1,2 @@
+perl ../../scripts/csTobed.pl ./Conserved.Segments hg38 hs1 > ./Conserved.Segments.bed
+

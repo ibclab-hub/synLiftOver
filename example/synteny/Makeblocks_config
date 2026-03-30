@@ -1,0 +1,12 @@
+>netdir
+../../example/ChainNet
+
+>chaindir
+../../example/ChainNet
+
+>resolution
+150000
+
+>species
+hg38 0
+hs1 1

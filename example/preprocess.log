@@ -1,0 +1,3503 @@
+mkdir: cannot create directory ‘./processed_AXT/’: File exists
+read synteny ...
+read chain chr1 ...
+filtering chain
+curidx: 0
+curidx: 1
+failed with blockorder 1 0
+failed with gapSize 1 0 888 -66026
+curidx: 2
+failed with gapSize 2 1 964 0
+curidx: 3
+failed with gapSize 3 2 236 0
+curidx: 4
+failed with gapSize 4 3 -2340 -2032
+curidx: 5
+failed with blockorder 5 4
+failed with gapSize 5 4 0 -118
+curidx: 6
+failed with gapSize 6 5 0 -59
+curidx: 7
+failed with gapSize 7 6 2104 242410333
+curidx: 8
+can merge 7 8
+curidx: 9
+failed with gapSize 9 8 203 0
+curidx: 10
+failed with blockorder 10 9
+failed with gapSize 10 9 -22106 -19346049
+curidx: 11
+failed with blockorder 11 10
+failed with gapSize 11 10 21903 -1412889
+curidx: 12
+failed with gapSize 12 11 63 0
+curidx: 13
+failed with gapSize 13 12 1758 493
+curidx: 14
+failed with gapSize 14 13 0 1800
+curidx: 15
+failed with gapSize 15 14 13 5669
+curidx: 16
+failed with gapSize 16 15 0 2422
+curidx: 17
+failed with gapSize 17 16 38 0
+curidx: 18
+failed with gapSize 18 17 5 149
+curidx: 19
+failed with gapSize 19 18 31 0
+curidx: 20
+failed with blockorder 20 19
+failed with gapSize 20 19 -39346 -221601481
+curidx: 21
+failed with gapSize 21 20 321 242312435
+curidx: 22
+failed with gapSize 22 21 1022 0
+curidx: 23
+failed with blockorder 23 22
+failed with gapSize 23 22 -1377 -242312466
+curidx: 24
+failed with gapSize 24 23 878 0
+curidx: 25
+failed with dir 25 24
+failed with gapSize 25 24 -1019 21071365
+curidx: 26
+failed with gapSize 26 25 721 1024
+curidx: 27
+failed with dir 27 26
+failed with gapSize 27 26 -826 -21072732
+curidx: 28
+failed with gapSize 28 27 1 -193
+curidx: 29
+failed with gapSize 29 28 4 -94
+curidx: 30
+failed with gapSize 30 29 0 -97
+curidx: 31
+failed with gapSize 31 30 0 -49
+curidx: 32
+failed with gapSize 32 31 0 -49
+curidx: 33
+failed with blockorder 33 32
+failed with gapSize 33 32 8 -90
+curidx: 34
+failed with blockorder 34 33
+failed with gapSize 34 33 0 -97
+curidx: 35
+failed with gapSize 35 34 7511 17644
+curidx: 36
+failed with gapSize 36 35 19858 242327472
+curidx: 37
+failed with gapSize 37 36 10381 10432
+curidx: 38
+failed with blockorder 38 37
+failed with gapSize 38 37 12 -242214598
+curidx: 39
+failed with dir 39 38
+failed with gapSize 39 38 0 -277601
+curidx: 40
+failed with blockorder 40 39
+failed with gapSize 40 39 66858 -22382
+curidx: 41
+failed with gapSize 41 40 311 1292
+curidx: 42
+failed with dir 42 41
+failed with gapSize 42 41 0 -9335
+curidx: 43
+failed with gapSize 43 42 0 44492
+curidx: 44
+can merge 43 44
+curidx: 45
+failed with gapSize 45 44 5774 57035
+curidx: 46
+can merge 45 46
+curidx: 47
+failed with gapSize 47 46 -16584 222971603
+curidx: 48
+failed with blockorder 48 47
+failed with gapSize 48 47 10822 -211541914
+curidx: 49
+failed with dir 49 48
+failed with gapSize 49 48 0 -11612729
+curidx: 50
+failed with gapSize 50 49 311 1292
+curidx: 51
+failed with dir 51 50
+failed with gapSize 51 50 0 -9335
+curidx: 52
+can merge 51 52
+curidx: 53
+failed with gapSize 53 52 919 0
+curidx: 54
+can merge 53 54
+curidx: 55
+can merge 54 55
+curidx: 56
+failed with synteny 56 55
+failed with gapSize 56 55 233362 4143
+curidx: 57
+can merge 56 57
+curidx: 58
+failed with gapSize 58 57 0 2356
+curidx: 59
+failed with gapSize 59 58 35 0
+curidx: 60
+can merge 59 60
+curidx: 61
+failed with gapSize 61 60 36 0
+curidx: 62
+failed with gapSize 62 61 402 0
+curidx: 63
+failed with gapSize 63 62 476 0
+curidx: 64
+failed with gapSize 64 63 1743 1340
+curidx: 65
+failed with gapSize 65 64 37 0
+curidx: 66
+failed with gapSize 66 65 38 0
+curidx: 67
+can merge 66 67
+curidx: 68
+can merge 67 68
+curidx: 69
+can merge 68 69
+curidx: 70
+failed with gapSize 70 69 26 0
+curidx: 71
+can merge 70 71
+curidx: 72
+failed with gapSize 72 71 38 0
+curidx: 73
+failed with gapSize 73 72 47 0
+curidx: 74
+failed with gapSize 74 73 27 0
+curidx: 75
+failed with gapSize 75 74 1768 0
+curidx: 76
+can merge 75 76
+curidx: 77
+failed with gapSize 77 76 216 0
+curidx: 78
+can merge 77 78
+curidx: 79
+can merge 78 79
+curidx: 80
+can merge 79 80
+curidx: 81
+can merge 80 81
+curidx: 82
+can merge 81 82
+curidx: 83
+failed with gapSize 83 82 135 528
+curidx: 84
+can merge 83 84
+curidx: 85
+can merge 84 85
+curidx: 86
+failed with gapSize 86 85 1080 0
+curidx: 87
+failed with gapSize 87 86 0 1312
+curidx: 88
+failed with gapSize 88 87 1010 1087
+curidx: 89
+failed with gapSize 89 88 0 1955
+curidx: 90
+can merge 89 90
+curidx: 91
+can merge 90 91
+curidx: 92
+failed with gapSize 92 91 53 0
+curidx: 93
+failed with gapSize 93 92 51 0
+curidx: 94
+can merge 93 94
+curidx: 95
+failed with gapSize 95 94 0 1028
+curidx: 96
+failed with gapSize 96 95 34 0
+curidx: 97
+failed with gapSize 97 96 168 0
+curidx: 98
+failed with gapSize 98 97 429 0
+curidx: 99
+can merge 98 99
+curidx: 100
+can merge 99 100
+curidx: 101
+failed with gapSize 101 100 175 0
+curidx: 102
+failed with gapSize 102 101 95 0
+curidx: 103
+failed with gapSize 103 102 39 0
+curidx: 104
+failed with gapSize 104 103 62 0
+curidx: 105
+failed with gapSize 105 104 45 0
+curidx: 106
+failed with gapSize 106 105 109 28
+curidx: 107
+failed with gapSize 107 106 111 0
+curidx: 108
+can merge 107 108
+curidx: 109
+can merge 108 109
+curidx: 110
+can merge 109 110
+curidx: 111
+can merge 110 111
+curidx: 112
+failed with gapSize 112 111 40 0
+curidx: 113
+failed with gapSize 113 112 0 3350
+curidx: 114
+can merge 113 114
+curidx: 115
+failed with gapSize 115 114 0 1646
+curidx: 116
+can merge 115 116
+curidx: 117
+failed with gapSize 117 116 96 0
+curidx: 118
+failed with gapSize 118 117 2229 2134
+curidx: 119
+can merge 118 119
+curidx: 120
+failed with gapSize 120 119 402 0
+curidx: 121
+can merge 120 121
+curidx: 122
+failed with gapSize 122 121 0 2971
+curidx: 123
+failed with gapSize 123 122 725 3857
+curidx: 124
+can merge 123 124
+curidx: 125
+failed with gapSize 125 124 0 2566
+curidx: 126
+failed with gapSize 126 125 202 2079
+curidx: 127
+can merge 126 127
+curidx: 128
+failed with gapSize 128 127 0 7497
+curidx: 129
+failed with gapSize 129 128 1 4331
+curidx: 130
+can merge 129 130
+curidx: 131
+failed with gapSize 131 130 0 1041
+curidx: 132
+can merge 131 132
+curidx: 133
+can merge 132 133
+curidx: 134
+failed with gapSize 134 133 201 6375
+curidx: 135
+failed with gapSize 135 134 0 2085
+curidx: 136
+failed with gapSize 136 135 3 5540
+curidx: 137
+failed with gapSize 137 136 0 1808
+curidx: 138
+can merge 137 138
+curidx: 139
+can merge 138 139
+curidx: 140
+failed with gapSize 140 139 0 4007
+curidx: 141
+failed with gapSize 141 140 158 4165
+curidx: 142
+can merge 141 142
+curidx: 143
+can merge 142 143
+curidx: 144
+failed with gapSize 144 143 319 1001
+curidx: 145
+can merge 144 145
+curidx: 146
+failed with gapSize 146 145 41 1164
+curidx: 147
+can merge 146 147
+curidx: 148
+failed with gapSize 148 147 5 2412
+curidx: 149
+can merge 148 149
+curidx: 150
+failed with gapSize 150 149 128 3212
+curidx: 151
+can merge 150 151
+curidx: 152
+failed with gapSize 152 151 195 2799
+curidx: 153
+can merge 152 153
+curidx: 154
+failed with gapSize 154 153 54 5216
+curidx: 155
+failed with gapSize 155 154 0 2328
+curidx: 156
+can merge 155 156
+curidx: 157
+can merge 156 157
+curidx: 158
+failed with gapSize 158 157 0 2043
+curidx: 159
+failed with gapSize 159 158 0 6569
+curidx: 160
+failed with gapSize 160 159 0 1443
+curidx: 161
+failed with gapSize 161 160 183 5722
+curidx: 162
+can merge 161 162
+curidx: 163
+can merge 162 163
+curidx: 164
+failed with gapSize 164 163 41 0
+curidx: 165
+failed with gapSize 165 164 0 3655
+curidx: 166
+failed with gapSize 166 165 40 0
+curidx: 167
+failed with gapSize 167 166 41 0
+curidx: 168
+failed with gapSize 168 167 40 0
+curidx: 169
+can merge 168 169
+curidx: 170
+failed with gapSize 170 169 1732 2765
+curidx: 171
+failed with gapSize 171 170 39 0
+curidx: 172
+can merge 171 172
+curidx: 173
+can merge 172 173
+curidx: 174
+can merge 173 174
+curidx: 175
+failed with gapSize 175 174 1 1
+curidx: 176
+can merge 175 176
+curidx: 177
+can merge 176 177
+curidx: 178
+can merge 177 178
+curidx: 179
+failed with gapSize 179 178 40 0
+curidx: 180
+failed with gapSize 180 179 2 2
+curidx: 181
+can merge 180 181
+curidx: 182
+can merge 181 182
+curidx: 183
+can merge 182 183
+curidx: 184
+can merge 183 184
+curidx: 185
+can merge 184 185
+curidx: 186
+can merge 185 186
+curidx: 187
+can merge 186 187
+curidx: 188
+failed with gapSize 188 187 43522 78
+curidx: 189
+failed with gapSize 189 188 160 0
+curidx: 190
+failed with gapSize 190 189 0 1289
+curidx: 191
+failed with gapSize 191 190 0 2050
+curidx: 192
+can merge 191 192
+curidx: 193
+can merge 192 193
+curidx: 194
+can merge 193 194
+curidx: 195
+failed with gapSize 195 194 2635 3246
+curidx: 196
+can merge 195 196
+curidx: 197
+failed with gapSize 197 196 66 0
+curidx: 198
+failed with gapSize 198 197 264 0
+curidx: 199
+can merge 198 199
+curidx: 200
+can merge 199 200
+curidx: 201
+can merge 200 201
+curidx: 202
+can merge 201 202
+curidx: 203
+failed with gapSize 203 202 288 0
+curidx: 204
+can merge 203 204
+curidx: 205
+can merge 204 205
+curidx: 206
+can merge 205 206
+curidx: 207
+can merge 206 207
+curidx: 208
+can merge 207 208
+curidx: 209
+can merge 208 209
+curidx: 210
+failed with gapSize 210 209 0 2258
+curidx: 211
+failed with gapSize 211 210 0 1301
+curidx: 212
+failed with gapSize 212 211 38 0
+curidx: 213
+can merge 212 213
+curidx: 214
+can merge 213 214
+curidx: 215
+can merge 214 215
+curidx: 216
+failed with gapSize 216 215 66 0
+curidx: 217
+failed with gapSize 217 216 37 0
+curidx: 218
+failed with gapSize 218 217 153 0
+curidx: 219
+can merge 218 219
+curidx: 220
+can merge 219 220
+curidx: 221
+failed with gapSize 221 220 0 1333
+curidx: 222
+can merge 221 222
+curidx: 223
+failed with gapSize 223 222 118 0
+curidx: 224
+can merge 223 224
+curidx: 225
+failed with gapSize 225 224 1329 345
+curidx: 226
+can merge 225 226
+curidx: 227
+can merge 226 227
+curidx: 228
+failed with gapSize 228 227 7 1016
+curidx: 229
+can merge 228 229
+curidx: 230
+can merge 229 230
+curidx: 231
+failed with gapSize 231 230 43 0
+curidx: 232
+can merge 231 232
+curidx: 233
+failed with gapSize 233 232 45 0
+curidx: 234
+failed with gapSize 234 233 46 0
+curidx: 235
+failed with gapSize 235 234 32 0
+curidx: 236
+can merge 235 236
+curidx: 237
+failed with gapSize 237 236 0 1855
+curidx: 238
+can merge 237 238
+curidx: 239
+can merge 238 239
+curidx: 240
+failed with gapSize 240 239 102 0
+curidx: 241
+can merge 240 241
+curidx: 242
+failed with gapSize 242 241 0 5215
+curidx: 243
+failed with gapSize 243 242 36 0
+curidx: 244
+can merge 243 244
+curidx: 245
+can merge 244 245
+curidx: 246
+can merge 245 246
+curidx: 247
+can merge 246 247
+curidx: 248
+can merge 247 248
+curidx: 249
+failed with gapSize 249 248 0 1326
+curidx: 250
+can merge 249 250
+curidx: 251
+failed with gapSize 251 250 40 0
+curidx: 252
+failed with gapSize 252 251 341 0
+curidx: 253
+failed with gapSize 253 252 244 0
+curidx: 254
+failed with gapSize 254 253 1 1
+curidx: 255
+failed with gapSize 255 254 41 1920
+curidx: 256
+can merge 255 256
+curidx: 257
+failed with gapSize 257 256 177 0
+curidx: 258
+can merge 257 258
+curidx: 259
+can merge 258 259
+curidx: 260
+can merge 259 260
+curidx: 261
+can merge 260 261
+curidx: 262
+can merge 261 262
+curidx: 263
+failed with gapSize 263 262 0 1603
+curidx: 264
+failed with gapSize 264 263 234 0
+curidx: 265
+can merge 264 265
+curidx: 266
+can merge 265 266
+curidx: 267
+failed with gapSize 267 266 28 0
+curidx: 268
+can merge 267 268
+curidx: 269
+can merge 268 269
+curidx: 270
+can merge 269 270
+curidx: 271
+can merge 270 271
+curidx: 272
+can merge 271 272
+curidx: 273
+can merge 272 273
+curidx: 274
+can merge 273 274
+curidx: 275
+can merge 274 275
+curidx: 276
+can merge 275 276
+curidx: 277
+can merge 276 277
+curidx: 278
+failed with gapSize 278 277 0 1454
+curidx: 279
+failed with gapSize 279 278 0 6482
+curidx: 280
+can merge 279 280
+curidx: 281
+can merge 280 281
+curidx: 282
+failed with gapSize 282 281 690 1262
+curidx: 283
+can merge 282 283
+curidx: 284
+failed with gapSize 284 283 4580 0
+curidx: 285
+failed with gapSize 285 284 0 1899
+curidx: 286
+can merge 285 286
+curidx: 287
+failed with gapSize 287 286 0 1246
+curidx: 288
+failed with gapSize 288 287 0 1364
+curidx: 289
+failed with gapSize 289 288 296 3
+curidx: 290
+can merge 289 290
+curidx: 291
+failed with gapSize 291 290 280 0
+curidx: 292
+failed with gapSize 292 291 56186 29257
+curidx: 293
+failed with gapSize 293 292 2440 2203
+curidx: 294
+failed with gapSize 294 293 102 0
+curidx: 295
+failed with gapSize 295 294 0 2152
+curidx: 296
+failed with gapSize 296 295 18269 18276
+curidx: 297
+failed with gapSize 297 296 72382 0
+curidx: 298
+failed with gapSize 298 297 5353 0
+curidx: 299
+failed with gapSize 299 298 31 0
+curidx: 300
+failed with gapSize 300 299 31 0
+curidx: 301
+can merge 300 301
+curidx: 302
+can merge 301 302
+curidx: 303
+failed with gapSize 303 302 34 0
+curidx: 304
+failed with gapSize 304 303 1 1
+curidx: 305
+failed with gapSize 305 304 30 1448
+curidx: 306
+can merge 305 306
+curidx: 307
+can merge 306 307
+curidx: 308
+failed with gapSize 308 307 40 0
+curidx: 309
+can merge 308 309
+curidx: 310
+can merge 309 310
+curidx: 311
+failed with gapSize 311 310 3499 15
+curidx: 312
+can merge 311 312
+curidx: 313
+can merge 312 313
+curidx: 314
+failed with gapSize 314 313 0 4719
+curidx: 315
+failed with gapSize 315 314 9 6320
+curidx: 316
+failed with gapSize 316 315 6 3118
+curidx: 317
+failed with gapSize 317 316 0 6263
+curidx: 318
+failed with gapSize 318 317 0 165364
+curidx: 319
+failed with gapSize 319 318 0 88092
+curidx: 320
+failed with gapSize 320 319 0 7339
+curidx: 321
+failed with gapSize 321 320 1764 0
+curidx: 322
+failed with gapSize 322 321 0 89209
+curidx: 323
+can merge 322 323
+curidx: 324
+failed with gapSize 324 323 144 0
+curidx: 325
+failed with gapSize 325 324 0 2685
+curidx: 326
+can merge 325 326
+curidx: 327
+can merge 326 327
+curidx: 328
+failed with gapSize 328 327 322 0
+curidx: 329
+failed with gapSize 329 328 0 1305
+curidx: 330
+can merge 329 330
+curidx: 331
+failed with gapSize 331 330 0 4419
+curidx: 332
+failed with gapSize 332 331 266 0
+curidx: 333
+failed with gapSize 333 332 80 0
+curidx: 334
+failed with gapSize 334 333 42 0
+curidx: 335
+failed with gapSize 335 334 0 3711
+curidx: 336
+failed with gapSize 336 335 1 1
+curidx: 337
+can merge 336 337
+curidx: 338
+can merge 337 338
+curidx: 339
+can merge 338 339
+curidx: 340
+failed with gapSize 340 339 0 1253
+curidx: 341
+can merge 340 341
+curidx: 342
+can merge 341 342
+curidx: 343
+can merge 342 343
+curidx: 344
+failed with gapSize 344 343 1443 1230
+curidx: 345
+can merge 344 345
+curidx: 346
+failed with gapSize 346 345 2889 0
+curidx: 347
+failed with gapSize 347 346 272 0
+curidx: 348
+failed with gapSize 348 347 64 0
+curidx: 349
+failed with gapSize 349 348 135 0
+curidx: 350
+failed with gapSize 350 349 0 1272
+curidx: 351
+can merge 350 351
+curidx: 352
+can merge 351 352
+curidx: 353
+failed with gapSize 353 352 0 7474
+curidx: 354
+failed with gapSize 354 353 0 1294
+curidx: 355
+can merge 354 355
+curidx: 356
+can merge 355 356
+curidx: 357
+failed with gapSize 357 356 0 2151
+curidx: 358
+can merge 357 358
+curidx: 359
+failed with gapSize 359 358 178 0
+curidx: 360
+failed with gapSize 360 359 49 0
+curidx: 361
+can merge 360 361
+curidx: 362
+failed with gapSize 362 361 3 220
+curidx: 363
+can merge 362 363
+curidx: 364
+can merge 363 364
+curidx: 365
+can merge 364 365
+curidx: 366
+failed with gapSize 366 365 298 0
+curidx: 367
+failed with gapSize 367 366 2822 0
+curidx: 368
+can merge 367 368
+curidx: 369
+can merge 368 369
+curidx: 370
+can merge 369 370
+curidx: 371
+failed with gapSize 371 370 1 1
+curidx: 372
+failed with gapSize 372 371 89 693
+curidx: 373
+failed with gapSize 373 372 4809 4809
+curidx: 374
+can merge 373 374
+curidx: 375
+failed with gapSize 375 374 0 1163
+curidx: 376
+failed with gapSize 376 375 0 1178
+curidx: 377
+failed with gapSize 377 376 571 0
+curidx: 378
+failed with gapSize 378 377 0 1380
+curidx: 379
+failed with gapSize 379 378 309 0
+curidx: 380
+can merge 379 380
+curidx: 381
+can merge 380 381
+curidx: 382
+can merge 381 382
+curidx: 383
+failed with gapSize 383 382 374 0
+curidx: 384
+can merge 383 384
+curidx: 385
+failed with gapSize 385 384 139 0
+curidx: 386
+can merge 385 386
+curidx: 387
+can merge 386 387
+curidx: 388
+failed with gapSize 388 387 52 0
+curidx: 389
+failed with gapSize 389 388 44 1603
+curidx: 390
+failed with gapSize 390 389 5 3639
+curidx: 391
+failed with gapSize 391 390 8 212
+curidx: 392
+can merge 391 392
+curidx: 393
+can merge 392 393
+curidx: 394
+failed with gapSize 394 393 0 2544
+curidx: 395
+failed with gapSize 395 394 1 1
+curidx: 396
+failed with gapSize 396 395 0 4878
+curidx: 397
+can merge 396 397
+curidx: 398
+can merge 397 398
+curidx: 399
+can merge 398 399
+curidx: 400
+can merge 399 400
+curidx: 401
+failed with gapSize 401 400 0 1003
+curidx: 402
+failed with gapSize 402 401 17 1712
+curidx: 403
+can merge 402 403
+curidx: 404
+failed with gapSize 404 403 9 925
+curidx: 405
+can merge 404 405
+curidx: 406
+failed with gapSize 406 405 106 0
+curidx: 407
+failed with gapSize 407 406 54 0
+curidx: 408
+can merge 407 408
+curidx: 409
+can merge 408 409
+curidx: 410
+can merge 409 410
+curidx: 411
+can merge 410 411
+curidx: 412
+can merge 411 412
+curidx: 413
+failed with gapSize 413 412 163 0
+curidx: 414
+failed with gapSize 414 413 0 2389
+curidx: 415
+can merge 414 415
+curidx: 416
+failed with gapSize 416 415 1 1
+curidx: 417
+can merge 416 417
+curidx: 418
+can merge 417 418
+curidx: 419
+can merge 418 419
+curidx: 420
+can merge 419 420
+curidx: 421
+failed with gapSize 421 420 128 0
+curidx: 422
+can merge 421 422
+curidx: 423
+failed with gapSize 423 422 431 15
+curidx: 424
+can merge 423 424
+curidx: 425
+can merge 424 425
+curidx: 426
+can merge 425 426
+curidx: 427
+failed with gapSize 427 426 94 0
+curidx: 428
+failed with gapSize 428 427 3 3
+curidx: 429
+can merge 428 429
+curidx: 430
+failed with gapSize 430 429 1 1
+curidx: 431
+failed with gapSize 431 430 315 0
+curidx: 432
+can merge 431 432
+curidx: 433
+failed with gapSize 433 432 336 0
+curidx: 434
+failed with gapSize 434 433 637 922
+curidx: 435
+can merge 434 435
+curidx: 436
+failed with gapSize 436 435 1 306
+curidx: 437
+failed with gapSize 437 436 42 0
+curidx: 438
+failed with gapSize 438 437 2 2
+curidx: 439
+failed with gapSize 439 438 84 0
+curidx: 440
+can merge 439 440
+curidx: 441
+can merge 440 441
+curidx: 442
+failed with gapSize 442 441 0 2813
+curidx: 443
+failed with gapSize 443 442 192 2192
+curidx: 444
+failed with gapSize 444 443 1 1
+curidx: 445
+can merge 444 445
+curidx: 446
+failed with gapSize 446 445 28 0
+curidx: 447
+can merge 446 447
+curidx: 448
+failed with gapSize 448 447 127 0
+curidx: 449
+failed with gapSize 449 448 1 1
+curidx: 450
+can merge 449 450
+curidx: 451
+can merge 450 451
+curidx: 452
+failed with gapSize 452 451 11 118
+curidx: 453
+can merge 452 453
+curidx: 454
+failed with gapSize 454 453 1 1
+curidx: 455
+can merge 454 455
+curidx: 456
+can merge 455 456
+curidx: 457
+can merge 456 457
+curidx: 458
+can merge 457 458
+curidx: 459
+failed with gapSize 459 458 29 5
+curidx: 460
+failed with gapSize 460 459 46 0
+curidx: 461
+can merge 460 461
+curidx: 462
+failed with gapSize 462 461 160 0
+curidx: 463
+can merge 462 463
+curidx: 464
+can merge 463 464
+curidx: 465
+can merge 464 465
+curidx: 466
+can merge 465 466
+curidx: 467
+can merge 466 467
+curidx: 468
+failed with gapSize 468 467 3693 0
+curidx: 469
+failed with gapSize 469 468 6 117
+curidx: 470
+can merge 469 470
+curidx: 471
+failed with gapSize 471 470 0 1607
+curidx: 472
+can merge 471 472
+curidx: 473
+failed with gapSize 473 472 54 0
+curidx: 474
+failed with gapSize 474 473 3523 4288
+curidx: 475
+failed with gapSize 475 474 321 0
+curidx: 476
+failed with gapSize 476 475 3855 0
+curidx: 477
+failed with gapSize 477 476 317 0
+curidx: 478
+failed with gapSize 478 477 339 0
+curidx: 479
+failed with gapSize 479 478 15 249
+curidx: 480
+failed with gapSize 480 479 1 1
+curidx: 481
+failed with gapSize 481 480 913 0
+curidx: 482
+can merge 481 482
+curidx: 483
+failed with gapSize 483 482 148 0
+curidx: 484
+can merge 483 484
+curidx: 485
+failed with gapSize 485 484 1 1
+curidx: 486
+failed with gapSize 486 485 349 0
+curidx: 487
+can merge 486 487
+curidx: 488
+failed with gapSize 488 487 339 0
+curidx: 489
+can merge 488 489
+curidx: 490
+failed with gapSize 490 489 2790 0
+curidx: 491
+can merge 490 491
+curidx: 492
+can merge 491 492
+curidx: 493
+failed with gapSize 493 492 0 2151
+curidx: 494
+failed with gapSize 494 493 176 0
+curidx: 495
+can merge 494 495
+curidx: 496
+failed with gapSize 496 495 270 0
+curidx: 497
+failed with gapSize 497 496 331 0
+curidx: 498
+can merge 497 498
+curidx: 499
+can merge 498 499
+curidx: 500
+failed with gapSize 500 499 332 0
+curidx: 501
+failed with gapSize 501 500 1 1
+curidx: 502
+failed with gapSize 502 501 6 130
+curidx: 503
+failed with gapSize 503 502 319 0
+curidx: 504
+failed with gapSize 504 503 306 0
+curidx: 505
+failed with gapSize 505 504 359 2
+curidx: 506
+can merge 505 506
+curidx: 507
+failed with gapSize 507 506 0 1195
+curidx: 508
+can merge 507 508
+curidx: 509
+failed with gapSize 509 508 331 0
+curidx: 510
+failed with gapSize 510 509 216 0
+curidx: 511
+failed with gapSize 511 510 310 0
+curidx: 512
+can merge 511 512
+curidx: 513
+can merge 512 513
+curidx: 514
+can merge 513 514
+curidx: 515
+failed with gapSize 515 514 45516 0
+curidx: 516
+can merge 515 516
+curidx: 517
+failed with gapSize 517 516 1 1
+curidx: 518
+failed with gapSize 518 517 0 8217
+curidx: 519
+failed with gapSize 519 518 315 0
+curidx: 520
+failed with gapSize 520 519 121 0
+curidx: 521
+can merge 520 521
+curidx: 522
+can merge 521 522
+curidx: 523
+can merge 522 523
+curidx: 524
+failed with gapSize 524 523 5405 0
+curidx: 525
+failed with gapSize 525 524 330 0
+curidx: 526
+can merge 525 526
+curidx: 527
+can merge 526 527
+curidx: 528
+failed with gapSize 528 527 283 0
+curidx: 529
+failed with gapSize 529 528 122 0
+curidx: 530
+can merge 529 530
+curidx: 531
+can merge 530 531
+curidx: 532
+can merge 531 532
+curidx: 533
+can merge 532 533
+curidx: 534
+failed with gapSize 534 533 116 0
+curidx: 535
+failed with gapSize 535 534 27 0
+curidx: 536
+failed with gapSize 536 535 322 0
+curidx: 537
+can merge 536 537
+curidx: 538
+failed with gapSize 538 537 317 0
+curidx: 539
+failed with gapSize 539 538 1248 0
+curidx: 540
+can merge 539 540
+curidx: 541
+can merge 540 541
+curidx: 542
+can merge 541 542
+curidx: 543
+failed with gapSize 543 542 31 0
+curidx: 544
+can merge 543 544
+curidx: 545
+failed with gapSize 545 544 329 0
+curidx: 546
+failed with gapSize 546 545 37 0
+curidx: 547
+failed with gapSize 547 546 0 3121
+curidx: 548
+failed with gapSize 548 547 320 0
+curidx: 549
+failed with gapSize 549 548 1 1
+curidx: 550
+failed with gapSize 550 549 1 1
+curidx: 551
+can merge 550 551
+curidx: 552
+can merge 551 552
+curidx: 553
+failed with gapSize 553 552 330 0
+curidx: 554
+failed with gapSize 554 553 328 0
+curidx: 555
+can merge 554 555
+curidx: 556
+failed with gapSize 556 555 717 0
+curidx: 557
+can merge 556 557
+curidx: 558
+failed with gapSize 558 557 128 0
+curidx: 559
+failed with gapSize 559 558 0 2115
+curidx: 560
+can merge 559 560
+curidx: 561
+failed with gapSize 561 560 156 2
+curidx: 562
+can merge 561 562
+curidx: 563
+can merge 562 563
+curidx: 564
+failed with gapSize 564 563 124 0
+curidx: 565
+failed with gapSize 565 564 1 1
+curidx: 566
+can merge 565 566
+curidx: 567
+can merge 566 567
+curidx: 568
+failed with gapSize 568 567 283 0
+curidx: 569
+can merge 568 569
+curidx: 570
+can merge 569 570
+curidx: 571
+can merge 570 571
+curidx: 572
+failed with gapSize 572 571 102 47
+curidx: 573
+can merge 572 573
+curidx: 574
+can merge 573 574
+curidx: 575
+failed with gapSize 575 574 17 2522
+curidx: 576
+failed with gapSize 576 575 1 1
+curidx: 577
+can merge 576 577
+curidx: 578
+failed with gapSize 578 577 319 0
+curidx: 579
+failed with gapSize 579 578 39 0
+curidx: 580
+failed with gapSize 580 579 29 0
+curidx: 581
+can merge 580 581
+curidx: 582
+failed with gapSize 582 581 1 1
+curidx: 583
+can merge 582 583
+curidx: 584
+can merge 583 584
+curidx: 585
+failed with gapSize 585 584 1 1
+curidx: 586
+failed with gapSize 586 585 143 0
+curidx: 587
+can merge 586 587
+curidx: 588
+can merge 587 588
+curidx: 589
+can merge 588 589
+curidx: 590
+can merge 589 590
+curidx: 591
+failed with gapSize 591 590 330 0
+curidx: 592
+failed with gapSize 592 591 319 0
+curidx: 593
+failed with gapSize 593 592 40 0
+curidx: 594
+failed with gapSize 594 593 1 146
+curidx: 595
+failed with gapSize 595 594 34 0
+curidx: 596
+failed with gapSize 596 595 4 108
+curidx: 597
+failed with gapSize 597 596 0 188274
+curidx: 598
+failed with gapSize 598 597 0 5279
+curidx: 599
+can merge 598 599
+curidx: 600
+failed with gapSize 600 599 818 18
+curidx: 601
+can merge 600 601
+curidx: 602
+failed with gapSize 602 601 330 0
+curidx: 603
+failed with gapSize 603 602 274 0
+curidx: 604
+failed with gapSize 604 603 7583 2
+curidx: 605
+failed with gapSize 605 604 0 2260
+curidx: 606
+failed with gapSize 606 605 111 0
+curidx: 607
+can merge 606 607
+curidx: 608
+can merge 607 608
+curidx: 609
+can merge 608 609
+curidx: 610
+can merge 609 610
+curidx: 611
+failed with gapSize 611 610 1 1
+curidx: 612
+failed with gapSize 612 611 3927 17
+curidx: 613
+failed with gapSize 613 612 125 0
+curidx: 614
+failed with gapSize 614 613 42 0
+curidx: 615
+failed with gapSize 615 614 62865 9109
+curidx: 616
+failed with gapSize 616 615 626 626
+curidx: 617
+failed with gapSize 617 616 9139 62840
+curidx: 618
+failed with gapSize 618 617 460 87
+curidx: 619
+can merge 618 619
+curidx: 620
+failed with gapSize 620 619 330 0
+curidx: 621
+failed with gapSize 621 620 160 0
+curidx: 622
+failed with gapSize 622 621 4232 0
+curidx: 623
+failed with gapSize 623 622 18445 0
+curidx: 624
+failed with gapSize 624 623 0 4831
+curidx: 625
+failed with gapSize 625 624 170 0
+curidx: 626
+failed with gapSize 626 625 1 1
+curidx: 627
+can merge 626 627
+curidx: 628
+failed with gapSize 628 627 2578 0
+curidx: 629
+can merge 628 629
+curidx: 630
+failed with gapSize 630 629 0 1836
+curidx: 631
+failed with gapSize 631 630 2455 0
+curidx: 632
+failed with gapSize 632 631 462 0
+curidx: 633
+can merge 632 633
+curidx: 634
+can merge 633 634
+curidx: 635
+failed with gapSize 635 634 312 0
+curidx: 636
+failed with gapSize 636 635 1 1
+curidx: 637
+failed with gapSize 637 636 284 0
+curidx: 638
+failed with gapSize 638 637 3357 0
+curidx: 639
+can merge 638 639
+curidx: 640
+failed with gapSize 640 639 0 2361
+curidx: 641
+failed with gapSize 641 640 1440 9
+curidx: 642
+can merge 641 642
+curidx: 643
+failed with gapSize 643 642 222 0
+curidx: 644
+can merge 643 644
+curidx: 645
+can merge 644 645
+curidx: 646
+failed with gapSize 646 645 0 2665
+curidx: 647
+failed with gapSize 647 646 1 1
+curidx: 648
+failed with gapSize 648 647 56 0
+curidx: 649
+failed with gapSize 649 648 4898 0
+curidx: 650
+failed with gapSize 650 649 30 543
+curidx: 651
+failed with gapSize 651 650 57 0
+curidx: 652
+failed with gapSize 652 651 7 610
+curidx: 653
+failed with gapSize 653 652 247258 0
+curidx: 654
+failed with gapSize 654 653 140 403
+curidx: 655
+failed with gapSize 655 654 3107323 5104819
+curidx: 656
+failed with gapSize 656 655 34840 35762
+curidx: 657
+can merge 656 657
+curidx: 658
+failed with gapSize 658 657 0 2831
+curidx: 659
+failed with gapSize 659 658 17583497 3133098
+curidx: 660
+failed with gapSize 660 659 1224 10120640
+curidx: 661
+failed with gapSize 661 660 26 0
+curidx: 662
+can merge 661 662
+curidx: 663
+failed with gapSize 663 662 26 0
+curidx: 664
+can merge 663 664
+curidx: 665
+failed with gapSize 665 664 848 3
+curidx: 666
+failed with gapSize 666 665 0 25935
+curidx: 667
+failed with gapSize 667 666 0 4979
+curidx: 668
+can merge 667 668
+curidx: 669
+failed with gapSize 669 668 56333 1491812
+curidx: 670
+failed with gapSize 670 669 0 3692
+curidx: 671
+failed with gapSize 671 670 49 0
+curidx: 672
+failed with gapSize 672 671 1189 3221
+curidx: 673
+failed with gapSize 673 672 0 56701
+curidx: 674
+failed with gapSize 674 673 26 0
+curidx: 675
+failed with gapSize 675 674 26 0
+curidx: 676
+failed with gapSize 676 675 0 2290
+curidx: 677
+failed with gapSize 677 676 3139 110107
+curidx: 678
+failed with gapSize 678 677 1 352
+curidx: 679
+failed with gapSize 679 678 68 0
+curidx: 680
+failed with gapSize 680 679 1 1
+curidx: 681
+failed with gapSize 681 680 48 0
+curidx: 682
+failed with gapSize 682 681 39 0
+curidx: 683
+failed with gapSize 683 682 34 0
+curidx: 684
+failed with gapSize 684 683 43 0
+curidx: 685
+failed with gapSize 685 684 35 0
+curidx: 686
+failed with gapSize 686 685 56 0
+curidx: 687
+failed with gapSize 687 686 0 26773
+curidx: 688
+failed with gapSize 688 687 2184 4375
+curidx: 689
+can merge 688 689
+curidx: 690
+failed with gapSize 690 689 33 0
+curidx: 691
+failed with gapSize 691 690 27 0
+curidx: 692
+failed with gapSize 692 691 46 0
+curidx: 693
+failed with gapSize 693 692 892 0
+curidx: 694
+failed with gapSize 694 693 20353 11
+curidx: 695
+failed with gapSize 695 694 144964 144957
+curidx: 696
+failed with gapSize 696 695 11 20355
+curidx: 697
+failed with gapSize 697 696 207 0
+curidx: 698
+failed with gapSize 698 697 97 0
+curidx: 699
+failed with gapSize 699 698 60 2
+curidx: 700
+failed with gapSize 700 699 32 0
+curidx: 701
+failed with gapSize 701 700 1663 2676
+curidx: 702
+failed with gapSize 702 701 0 24019
+curidx: 703
+failed with gapSize 703 702 92 0
+curidx: 704
+failed with gapSize 704 703 3169 0
+curidx: 705
+failed with gapSize 705 704 1554 0
+curidx: 706
+failed with gapSize 706 705 1631 0
+curidx: 707
+failed with gapSize 707 706 3129 0
+curidx: 708
+failed with gapSize 708 707 1633 0
+curidx: 709
+failed with gapSize 709 708 1573 0
+curidx: 710
+failed with gapSize 710 709 1573 0
+curidx: 711
+failed with gapSize 711 710 1573 0
+curidx: 712
+failed with gapSize 712 711 0 6333
+curidx: 713
+failed with gapSize 713 712 0 1562
+curidx: 714
+failed with gapSize 714 713 25 0
+curidx: 715
+failed with gapSize 715 714 3196 0
+curidx: 716
+failed with gapSize 716 715 2433564 0
+curidx: 717
+failed with gapSize 717 716 3174 0
+curidx: 718
+failed with gapSize 718 717 3171 0
+curidx: 719
+failed with gapSize 719 718 3177 1614
+curidx: 720
+failed with gapSize 720 719 6296 0
+curidx: 721
+can merge 720 721
+curidx: 722
+failed with gapSize 722 721 3 719
+curidx: 723
+can merge 722 723
+curidx: 724
+failed with gapSize 724 723 3168 0
+curidx: 725
+failed with gapSize 725 724 6289 0
+curidx: 726
+failed with gapSize 726 725 12 58917
+curidx: 727
+failed with gapSize 727 726 0 1358
+curidx: 728
+failed with gapSize 728 727 310 0
+curidx: 729
+failed with gapSize 729 728 326 0
+curidx: 730
+failed with gapSize 730 729 401 3
+curidx: 731
+failed with gapSize 731 730 0 6291
+curidx: 732
+failed with gapSize 732 731 0 2400962
+curidx: 733
+can merge 732 733
+curidx: 734
+failed with gapSize 734 733 330 0
+curidx: 735
+failed with gapSize 735 734 904 0
+curidx: 736
+failed with gapSize 736 735 5 37
+curidx: 737
+failed with gapSize 737 736 334 0
+curidx: 738
+failed with gapSize 738 737 348 0
+curidx: 739
+can merge 738 739
+curidx: 740
+failed with gapSize 740 739 1 137
+curidx: 741
+failed with gapSize 741 740 1 1
+curidx: 742
+failed with gapSize 742 741 240 0
+curidx: 743
+failed with gapSize 743 742 0 11994
+curidx: 744
+can merge 743 744
+curidx: 745
+failed with gapSize 745 744 1 1
+curidx: 746
+failed with gapSize 746 745 257 0
+curidx: 747
+failed with gapSize 747 746 470 0
+curidx: 748
+failed with gapSize 748 747 0 1118
+curidx: 749
+failed with gapSize 749 748 0 2192
+curidx: 750
+can merge 749 750
+curidx: 751
+failed with gapSize 751 750 121 0
+curidx: 752
+failed with gapSize 752 751 1800 869
+curidx: 753
+can merge 752 753
+curidx: 754
+failed with gapSize 754 753 748 0
+curidx: 755
+can merge 754 755
+curidx: 756
+can merge 755 756
+curidx: 757
+failed with gapSize 757 756 2231 0
+curidx: 758
+can merge 757 758
+curidx: 759
+can merge 758 759
+curidx: 760
+failed with gapSize 760 759 1 1
+curidx: 761
+failed with gapSize 761 760 865 865
+curidx: 762
+failed with gapSize 762 761 37 0
+curidx: 763
+can merge 762 763
+curidx: 764
+failed with gapSize 764 763 354 0
+curidx: 765
+failed with gapSize 765 764 0 125520
+curidx: 766
+failed with gapSize 766 765 26 0
+curidx: 767
+failed with gapSize 767 766 28 81755
+curidx: 768
+failed with gapSize 768 767 320 0
+curidx: 769
+can merge 768 769
+curidx: 770
+failed with gapSize 770 769 26 0
+curidx: 771
+can merge 770 771
+curidx: 772
+can merge 771 772
+curidx: 773
+failed with gapSize 773 772 96 0
+curidx: 774
+can merge 773 774
+curidx: 775
+can merge 774 775
+curidx: 776
+can merge 775 776
+curidx: 777
+can merge 776 777
+curidx: 778
+can merge 777 778
+curidx: 779
+failed with gapSize 779 778 280 0
+curidx: 780
+failed with gapSize 780 779 112 0
+curidx: 781
+failed with gapSize 781 780 1 1
+curidx: 782
+failed with gapSize 782 781 65 1376
+curidx: 783
+failed with gapSize 783 782 0 4344
+curidx: 784
+failed with gapSize 784 783 1 1
+curidx: 785
+can merge 784 785
+curidx: 786
+failed with gapSize 786 785 0 1196
+curidx: 787
+failed with gapSize 787 786 0 1591
+curidx: 788
+can merge 787 788
+curidx: 789
+failed with gapSize 789 788 101 0
+curidx: 790
+failed with gapSize 790 789 12 645
+curidx: 791
+can merge 790 791
+curidx: 792
+can merge 791 792
+curidx: 793
+failed with gapSize 793 792 1 1
+curidx: 794
+failed with gapSize 794 793 82 0
+curidx: 795
+can merge 794 795
+curidx: 796
+can merge 795 796
+curidx: 797
+can merge 796 797
+curidx: 798
+can merge 797 798
+curidx: 799
+can merge 798 799
+curidx: 800
+failed with gapSize 800 799 330 0
+curidx: 801
+failed with gapSize 801 800 5288 0
+curidx: 802
+failed with gapSize 802 801 0 1094
+curidx: 803
+failed with gapSize 803 802 120 337
+curidx: 804
+failed with gapSize 804 803 114 0
+curidx: 805
+failed with gapSize 805 804 3 462
+curidx: 806
+can merge 805 806
+curidx: 807
+can merge 806 807
+curidx: 808
+failed with gapSize 808 807 20 35
+curidx: 809
+failed with gapSize 809 808 37 0
+curidx: 810
+failed with gapSize 810 809 39 0
+curidx: 811
+failed with gapSize 811 810 31 0
+curidx: 812
+failed with gapSize 812 811 556 0
+curidx: 813
+failed with gapSize 813 812 1 1
+curidx: 814
+can merge 813 814
+curidx: 815
+failed with gapSize 815 814 1 1
+curidx: 816
+can merge 815 816
+curidx: 817
+failed with gapSize 817 816 319 0
+curidx: 818
+failed with gapSize 818 817 324 0
+curidx: 819
+failed with gapSize 819 818 699 223
+curidx: 820
+can merge 819 820
+curidx: 821
+can merge 820 821
+curidx: 822
+can merge 821 822
+curidx: 823
+can merge 822 823
+curidx: 824
+failed with gapSize 824 823 0 2839
+curidx: 825
+failed with gapSize 825 824 181 0
+curidx: 826
+can merge 825 826
+curidx: 827
+failed with gapSize 827 826 0 3799
+curidx: 828
+failed with gapSize 828 827 6056 0
+curidx: 829
+failed with gapSize 829 828 322 0
+curidx: 830
+failed with gapSize 830 829 47 0
+curidx: 831
+failed with gapSize 831 830 2250 9
+curidx: 832
+failed with gapSize 832 831 495 0
+curidx: 833
+can merge 832 833
+curidx: 834
+failed with gapSize 834 833 1901 249
+curidx: 835
+failed with gapSize 835 834 6428 0
+curidx: 836
+failed with gapSize 836 835 222 24
+curidx: 837
+can merge 836 837
+curidx: 838
+failed with gapSize 838 837 775 0
+curidx: 839
+failed with gapSize 839 838 335 0
+curidx: 840
+can merge 839 840
+curidx: 841
+failed with gapSize 841 840 1 1
+curidx: 842
+can merge 841 842
+curidx: 843
+can merge 842 843
+curidx: 844
+failed with gapSize 844 843 1 1
+curidx: 845
+can merge 844 845
+curidx: 846
+failed with gapSize 846 845 1 1
+curidx: 847
+can merge 846 847
+curidx: 848
+failed with gapSize 848 847 227 0
+curidx: 849
+failed with gapSize 849 848 14 1963
+curidx: 850
+failed with gapSize 850 849 163 0
+curidx: 851
+can merge 850 851
+curidx: 852
+can merge 851 852
+curidx: 853
+failed with gapSize 853 852 3207 32
+curidx: 854
+failed with gapSize 854 853 260 0
+curidx: 855
+can merge 854 855
+curidx: 856
+failed with gapSize 856 855 205 0
+curidx: 857
+can merge 856 857
+curidx: 858
+can merge 857 858
+curidx: 859
+failed with gapSize 859 858 1 1
+curidx: 860
+can merge 859 860
+curidx: 861
+failed with gapSize 861 860 277 0
+curidx: 862
+can merge 861 862
+curidx: 863
+failed with gapSize 863 862 84684 0
+curidx: 864
+failed with gapSize 864 863 2763 0
+curidx: 865
+can merge 864 865
+curidx: 866
+can merge 865 866
+curidx: 867
+failed with gapSize 867 866 1665 0
+curidx: 868
+can merge 867 868
+curidx: 869
+can merge 868 869
+curidx: 870
+failed with gapSize 870 869 1 1
+curidx: 871
+failed with gapSize 871 870 1507 0
+curidx: 872
+failed with gapSize 872 871 126 0
+curidx: 873
+failed with gapSize 873 872 38 5
+curidx: 874
+failed with gapSize 874 873 1 1
+curidx: 875
+failed with gapSize 875 874 51 0
+curidx: 876
+can merge 875 876
+curidx: 877
+can merge 876 877
+curidx: 878
+failed with gapSize 878 877 101 0
+curidx: 879
+failed with gapSize 879 878 0 4576
+curidx: 880
+failed with gapSize 880 879 60 0
+curidx: 881
+failed with gapSize 881 880 288 0
+curidx: 882
+can merge 881 882
+curidx: 883
+can merge 882 883
+curidx: 884
+can merge 883 884
+curidx: 885
+can merge 884 885
+curidx: 886
+can merge 885 886
+curidx: 887
+failed with gapSize 887 886 4 459
+curidx: 888
+failed with gapSize 888 887 200 0
+curidx: 889
+failed with gapSize 889 888 161 81
+curidx: 890
+failed with gapSize 890 889 508 0
+curidx: 891
+failed with gapSize 891 890 316 0
+curidx: 892
+can merge 891 892
+curidx: 893
+failed with gapSize 893 892 140 0
+curidx: 894
+failed with gapSize 894 893 8 45
+curidx: 895
+can merge 894 895
+curidx: 896
+failed with gapSize 896 895 1 1
+curidx: 897
+can merge 896 897
+curidx: 898
+failed with gapSize 898 897 18556 0
+curidx: 899
+failed with gapSize 899 898 1 1
+curidx: 900
+failed with gapSize 900 899 7922 6
+curidx: 901
+failed with gapSize 901 900 319 0
+curidx: 902
+failed with gapSize 902 901 0 1381
+curidx: 903
+failed with gapSize 903 902 88 2026
+curidx: 904
+can merge 903 904
+curidx: 905
+failed with gapSize 905 904 0 3721
+curidx: 906
+failed with gapSize 906 905 119 0
+curidx: 907
+can merge 906 907
+curidx: 908
+failed with gapSize 908 907 1 1
+curidx: 909
+failed with gapSize 909 908 1481 0
+curidx: 910
+can merge 909 910
+curidx: 911
+failed with gapSize 911 910 1942 0
+curidx: 912
+failed with gapSize 912 911 1151 0
+curidx: 913
+failed with gapSize 913 912 0 1183
+curidx: 914
+failed with gapSize 914 913 3617 1
+curidx: 915
+failed with gapSize 915 914 1 1
+curidx: 916
+failed with gapSize 916 915 336 2
+curidx: 917
+can merge 916 917
+curidx: 918
+can merge 917 918
+curidx: 919
+failed with gapSize 919 918 172 0
+curidx: 920
+failed with gapSize 920 919 4 172
+curidx: 921
+can merge 920 921
+curidx: 922
+can merge 921 922
+curidx: 923
+failed with gapSize 923 922 303 0
+curidx: 924
+failed with gapSize 924 923 313 0
+curidx: 925
+failed with gapSize 925 924 6106 0
+curidx: 926
+can merge 925 926
+curidx: 927
+failed with gapSize 927 926 320 0
+curidx: 928
+failed with gapSize 928 927 0 1029
+curidx: 929
+can merge 928 929
+curidx: 930
+can merge 929 930
+curidx: 931
+can merge 930 931
+curidx: 932
+failed with gapSize 932 931 318 0
+curidx: 933
+can merge 932 933
+curidx: 934
+failed with gapSize 934 933 0 1792
+curidx: 935
+failed with gapSize 935 934 0 1476
+curidx: 936
+can merge 935 936
+curidx: 937
+can merge 936 937
+curidx: 938
+failed with gapSize 938 937 1 1
+curidx: 939
+can merge 938 939
+curidx: 940
+failed with gapSize 940 939 6374 2
+curidx: 941
+failed with gapSize 941 940 0 4152
+curidx: 942
+can merge 941 942
+curidx: 943
+can merge 942 943
+curidx: 944
+failed with gapSize 944 943 63827 14659
+curidx: 945
+can merge 944 945
+curidx: 946
+failed with gapSize 946 945 476 0
+curidx: 947
+failed with gapSize 947 946 313 0
+curidx: 948
+failed with gapSize 948 947 49 0
+curidx: 949
+failed with gapSize 949 948 110 0
+curidx: 950
+failed with gapSize 950 949 270 0
+curidx: 951
+failed with gapSize 951 950 318 0
+curidx: 952
+failed with gapSize 952 951 179 0
+curidx: 953
+can merge 952 953
+curidx: 954
+can merge 953 954
+curidx: 955
+failed with gapSize 955 954 306 0
+curidx: 956
+can merge 955 956
+curidx: 957
+failed with gapSize 957 956 48 0
+curidx: 958
+can merge 957 958
+curidx: 959
+failed with gapSize 959 958 208 0
+curidx: 960
+failed with gapSize 960 959 329 0
+curidx: 961
+failed with gapSize 961 960 0 189669
+curidx: 962
+failed with gapSize 962 961 336 0
+curidx: 963
+can merge 962 963
+curidx: 964
+failed with gapSize 964 963 12 435
+curidx: 965
+can merge 964 965
+curidx: 966
+can merge 965 966
+curidx: 967
+can merge 966 967
+curidx: 968
+failed with gapSize 968 967 40 0
+curidx: 969
+failed with gapSize 969 968 0 1047
+curidx: 970
+failed with gapSize 970 969 1 1
+curidx: 971
+can merge 970 971
+curidx: 972
+failed with gapSize 972 971 0 1679
+curidx: 973
+can merge 972 973
+curidx: 974
+can merge 973 974
+curidx: 975
+failed with gapSize 975 974 0 2427
+curidx: 976
+can merge 975 976
+curidx: 977
+failed with gapSize 977 976 328 0
+curidx: 978
+failed with gapSize 978 977 40 0
+curidx: 979
+failed with gapSize 979 978 29 0
+curidx: 980
+failed with gapSize 980 979 47 0
+curidx: 981
+can merge 980 981
+curidx: 982
+can merge 981 982
+curidx: 983
+failed with gapSize 983 982 1 1
+curidx: 984
+can merge 983 984
+curidx: 985
+failed with gapSize 985 984 0 3018
+curidx: 986
+can merge 985 986
+curidx: 987
+can merge 986 987
+curidx: 988
+can merge 987 988
+curidx: 989
+failed with gapSize 989 988 26 0
+curidx: 990
+can merge 989 990
+curidx: 991
+can merge 990 991
+curidx: 992
+failed with gapSize 992 991 62 0
+curidx: 993
+failed with gapSize 993 992 0 3838
+curidx: 994
+can merge 993 994
+curidx: 995
+failed with gapSize 995 994 9 543
+curidx: 996
+can merge 995 996
+curidx: 997
+failed with gapSize 997 996 338 0
+curidx: 998
+failed with gapSize 998 997 0 5829
+curidx: 999
+failed with gapSize 999 998 2243 0
+curidx: 1000
+failed with gapSize 1000 999 325 0
+curidx: 1001
+failed with gapSize 1001 1000 0 1106
+curidx: 1002
+failed with gapSize 1002 1001 0 2951
+curidx: 1003
+failed with gapSize 1003 1002 0 8054
+curidx: 1004
+failed with gapSize 1004 1003 833 0
+curidx: 1005
+can merge 1004 1005
+curidx: 1006
+can merge 1005 1006
+curidx: 1007
+failed with gapSize 1007 1006 156 0
+curidx: 1008
+can merge 1007 1008
+curidx: 1009
+can merge 1008 1009
+curidx: 1010
+failed with gapSize 1010 1009 0 1159
+curidx: 1011
+failed with gapSize 1011 1010 26 0
+curidx: 1012
+failed with gapSize 1012 1011 285 1
+curidx: 1013
+failed with gapSize 1013 1012 235 0
+curidx: 1014
+can merge 1013 1014
+curidx: 1015
+failed with gapSize 1015 1014 28 0
+curidx: 1016
+can merge 1015 1016
+curidx: 1017
+failed with gapSize 1017 1016 33 0
+curidx: 1018
+failed with gapSize 1018 1017 1783 4
+curidx: 1019
+failed with gapSize 1019 1018 324 0
+curidx: 1020
+can merge 1019 1020
+curidx: 1021
+failed with gapSize 1021 1020 325 0
+curidx: 1022
+failed with gapSize 1022 1021 123 0
+curidx: 1023
+can merge 1022 1023
+curidx: 1024
+can merge 1023 1024
+curidx: 1025
+can merge 1024 1025
+curidx: 1026
+failed with gapSize 1026 1025 1444 0
+curidx: 1027
+failed with gapSize 1027 1026 44 0
+curidx: 1028
+can merge 1027 1028
+curidx: 1029
+can merge 1028 1029
+curidx: 1030
+failed with gapSize 1030 1029 1014 18
+curidx: 1031
+failed with gapSize 1031 1030 0 4358
+curidx: 1032
+can merge 1031 1032
+curidx: 1033
+can merge 1032 1033
+curidx: 1034
+failed with gapSize 1034 1033 36 0
+curidx: 1035
+failed with gapSize 1035 1034 197 0
+curidx: 1036
+failed with gapSize 1036 1035 38 0
+curidx: 1037
+failed with gapSize 1037 1036 121 0
+curidx: 1038
+can merge 1037 1038
+curidx: 1039
+can merge 1038 1039
+curidx: 1040
+can merge 1039 1040
+curidx: 1041
+can merge 1040 1041
+curidx: 1042
+failed with gapSize 1042 1041 58 0
+curidx: 1043
+failed with gapSize 1043 1042 54 0
+curidx: 1044
+failed with gapSize 1044 1043 102 0
+curidx: 1045
+failed with gapSize 1045 1044 0 3803
+curidx: 1046
+failed with gapSize 1046 1045 31 0
+curidx: 1047
+failed with gapSize 1047 1046 61 0
+curidx: 1048
+failed with gapSize 1048 1047 134 0
+curidx: 1049
+can merge 1048 1049
+curidx: 1050
+can merge 1049 1050
+curidx: 1051
+failed with gapSize 1051 1050 792 0
+curidx: 1052
+failed with gapSize 1052 1051 335 0
+curidx: 1053
+failed with gapSize 1053 1052 329 0
+curidx: 1054
+failed with gapSize 1054 1053 134 0
+curidx: 1055
+can merge 1054 1055
+curidx: 1056
+can merge 1055 1056
+curidx: 1057
+can merge 1056 1057
+curidx: 1058
+can merge 1057 1058
+curidx: 1059
+can merge 1058 1059
+curidx: 1060
+failed with gapSize 1060 1059 13 13
+curidx: 1061
+can merge 1060 1061
+curidx: 1062
+failed with gapSize 1062 1061 558 0
+curidx: 1063
+can merge 1062 1063
+curidx: 1064
+can merge 1063 1064
+curidx: 1065
+can merge 1064 1065
+curidx: 1066
+failed with gapSize 1066 1065 56 0
+curidx: 1067
+can merge 1066 1067
+curidx: 1068
+failed with gapSize 1068 1067 56 0
+curidx: 1069
+failed with gapSize 1069 1068 31 0
+curidx: 1070
+can merge 1069 1070
+curidx: 1071
+failed with gapSize 1071 1070 324 0
+curidx: 1072
+failed with gapSize 1072 1071 1674 0
+curidx: 1073
+can merge 1072 1073
+curidx: 1074
+can merge 1073 1074
+curidx: 1075
+failed with gapSize 1075 1074 216 0
+curidx: 1076
+failed with gapSize 1076 1075 0 1001
+curidx: 1077
+failed with gapSize 1077 1076 0 3420
+curidx: 1078
+failed with gapSize 1078 1077 88 0
+curidx: 1079
+failed with gapSize 1079 1078 0 1138
+curidx: 1080
+failed with gapSize 1080 1079 1340 5170
+curidx: 1081
+failed with gapSize 1081 1080 310 0
+curidx: 1082
+can merge 1081 1082
+curidx: 1083
+can merge 1082 1083
+curidx: 1084
+can merge 1083 1084
+curidx: 1085
+can merge 1084 1085
+curidx: 1086
+can merge 1085 1086
+curidx: 1087
+failed with gapSize 1087 1086 195 0
+curidx: 1088
+failed with gapSize 1088 1087 2 2817
+curidx: 1089
+can merge 1088 1089
+curidx: 1090
+can merge 1089 1090
+curidx: 1091
+failed with gapSize 1091 1090 6053 0
+curidx: 1092
+can merge 1091 1092
+curidx: 1093
+failed with gapSize 1093 1092 6160 0
+curidx: 1094
+can merge 1093 1094
+curidx: 1095
+can merge 1094 1095
+curidx: 1096
+can merge 1095 1096
+curidx: 1097
+failed with gapSize 1097 1096 84 0
+curidx: 1098
+failed with gapSize 1098 1097 748 0
+curidx: 1099
+failed with gapSize 1099 1098 5110 4431
+curidx: 1100
+can merge 1099 1100
+curidx: 1101
+failed with gapSize 1101 1100 0 19027
+curidx: 1102
+failed with gapSize 1102 1101 3871 5625
+curidx: 1103
+failed with gapSize 1103 1102 14128 6331
+curidx: 1104
+failed with gapSize 1104 1103 78 0
+curidx: 1105
+failed with gapSize 1105 1104 178 0
+curidx: 1106
+failed with gapSize 1106 1105 154 45
+curidx: 1107
+failed with gapSize 1107 1106 28 0
+curidx: 1108
+can merge 1107 1108
+curidx: 1109
+can merge 1108 1109
+curidx: 1110
+failed with synteny 1110 1109
+failed with gapSize 1110 1109 -248574572 -248357085
+curidx: 1111
+failed with gapSize 1111 1110 55 -182
+curidx: 1112
+failed with gapSize 1112 1111 0 -79
+curidx: 1113
+failed with gapSize 1113 1112 0 -79
+curidx: 1114
+can merge 1113 1114
+curidx: 1115
+failed with gapSize 1115 1114 62547 67946
+curidx: 1116
+failed with gapSize 1116 1115 0 222988519
+curidx: 1117
+can merge 1116 1117
+curidx: 1118
+failed with blockorder 1118 1117
+failed with gapSize 1118 1117 0 -1435333
+curidx: 1119
+failed with gapSize 1119 1118 63 0
+curidx: 1120
+failed with gapSize 1120 1119 977 493
+curidx: 1121
+failed with gapSize 1121 1120 0 1800
+curidx: 1122
+failed with gapSize 1122 1121 956 3204
+curidx: 1123
+failed with gapSize 1123 1122 0 2422
+curidx: 1124
+failed with gapSize 1124 1123 5 149
+curidx: 1125
+failed with gapSize 1125 1124 31 0
+curidx: 1126
+failed with gapSize 1126 1125 81142 1324096
+curidx: 1127
+failed with gapSize 1127 1126 5 1345
+curidx: 1128
+failed with gapSize 1128 1127 5874 0
+curidx: 1129
+failed with gapSize 1129 1128 47 0
+curidx: 1130
+failed with blockorder 1130 1129
+failed with gapSize 1130 1129 -159562 -222957556
+curidx: 1131
+failed with gapSize 1131 1130 321 321
+curidx: 1132
+failed with gapSize 1132 1131 96 0
+curidx: 1133
+failed with dir 1133 1132
+failed with gapSize 1133 1132 -440 21072100
+curidx: 1134
+failed with dir 1134 1133
+failed with gapSize 1134 1133 5572 -21063561
+curidx: 1135
+failed with gapSize 1135 1134 0 3416
+curidx: 1136
+failed with gapSize 1136 1135 24002 223005416
+curidx: 1137
+failed with gapSize 1137 1136 10380 6241
+curidx: 1138
+failed with blockorder 1138 1137
+failed with gapSize 1138 1137 12 -222884172
+curidx: 1139
+failed with blockorder 1139 1138
+failed with gapSize 1139 1138 0 -334708
+curidx: 1140
+failed with gapSize 1140 1139 1 0
+curidx: 1141
+can merge 1140 1141
+curidx: 1142
+failed with gapSize 1142 1141 313 0
+curidx: 1143
+failed with gapSize 1143 1142 4 0
+curidx: 1144
+can merge 1143 1144
+curidx: 1145
+failed with gapSize 1145 1144 0 1316
+curidx: 1146
+failed with gapSize 1146 1145 94 0
+curidx: 1147
+failed with gapSize 1147 1146 499 0
+curidx: 1148
+failed with gapSize 1148 1147 672 0
+curidx: 1149
+failed with gapSize 1149 1148 726 0
+curidx: 1150
+failed with blockorder 1150 1149
+failed with gapSize 1150 1149 -14028 -13304
+curidx: 1151
+failed with gapSize 1151 1150 1884 2945
+curidx: 1152
+failed with gapSize 1152 1151 0 -158
+curidx: 1153
+failed with gapSize 1153 1152 8619 8458
+curidx: 1154
+failed with gapSize 1154 1153 0 -268
+curidx: 1155
+failed with gapSize 1155 1154 64 0
+curidx: 1156
+failed with gapSize 1156 1155 -121 147
+curidx: 1157
+failed with gapSize 1157 1156 1221 753
+curidx: 1158
+failed with blockorder 1158 1157
+failed with gapSize 1158 1157 0 -412
+curidx: 1159
+failed with gapSize 1159 1158 0 -104
+curidx: 1160
+failed with gapSize 1160 1159 0 -104
+curidx: 1161
+failed with gapSize 1161 1160 518 242362758
+curidx: 1162
+failed with dir 1162 1161
+failed with gapSize 1162 1161 14512 -231369656
+curidx: 1163
+failed with gapSize 1163 1162 70 70
+curidx: 1164
+failed with gapSize 1164 1163 0 130508840
+curidx: 1165
+failed with gapSize 1165 1164 126 125
+curidx: 1166
+failed with gapSize 1166 1165 65 83
+curidx: 1167
+failed with gapSize 1167 1166 228 221
+curidx: 1168
+failed with gapSize 1168 1167 386 360
+curidx: 1169
+failed with gapSize 1169 1168 177 172
+curidx: 1170
+failed with gapSize 1170 1169 166 162
+curidx: 1171
+failed with gapSize 1171 1170 178 178
+curidx: 1172
+failed with dir 1172 1171
+failed with gapSize 1172 1171 -1275 -133104066
+curidx: 1173
+failed with dir 1173 1172
+failed with gapSize 1173 1172 274 71114464
+curidx: 1174
+failed with dir 1174 1173
+failed with gapSize 1174 1173 15145 -79489325
+curidx: 1175
+failed with gapSize 1175 1174 2162 2156
+curidx: 1176
+failed with synteny 1176 1175
+failed with gapSize 1176 1175 152594 161833
+curidx: 1177
+failed with gapSize 1177 1176 72824 127703007
+curidx: 1178
+failed with blockorder 1178 1177
+failed with gapSize 1178 1177 15255 -127613733
+curidx: 1179
+failed with gapSize 1179 1178 0 -355
+curidx: 1180
+failed with gapSize 1180 1179 24621 24359
+curidx: 1181
+failed with blockorder 1181 1180
+failed with gapSize 1181 1180 0 -112
+curidx: 1182
+failed with gapSize 1182 1181 0 -28
+curidx: 1183
+failed with gapSize 1183 1182 0 -28
+curidx: 1184
+failed with gapSize 1184 1183 0 -28
+curidx: 1185
+failed with gapSize 1185 1184 0 -28
+curidx: 1186
+failed with gapSize 1186 1185 0 -112
+curidx: 1187
+failed with blockorder 1187 1186
+failed with gapSize 1187 1186 22 -146
+curidx: 1188
+failed with gapSize 1188 1187 21 21
+curidx: 1189
+failed with gapSize 1189 1188 0 -140
+curidx: 1190
+failed with gapSize 1190 1189 0 -84
+curidx: 1191
+failed with gapSize 1191 1190 0 -56
+curidx: 1192
+failed with gapSize 1192 1191 1272 1339
+curidx: 1193
+failed with blockorder 1193 1192
+failed with gapSize 1193 1192 0 -117
+curidx: 1194
+failed with gapSize 1194 1193 28291 28368
+curidx: 1195
+failed with gapSize 1195 1194 104 28
+curidx: 1196
+failed with gapSize 1196 1195 28158 29429
+curidx: 1197
+failed with gapSize 1197 1196 37925 37091
+curidx: 1198
+failed with gapSize 1198 1197 10854 11781
+curidx: 1199
+failed with gapSize 1199 1198 23326 23232
+curidx: 1200
+failed with gapSize 1200 1199 11120 11318
+curidx: 1201
+failed with blockorder 1201 1200
+failed with gapSize 1201 1200 30 -389
+curidx: 1202
+failed with gapSize 1202 1201 0 -30
+curidx: 1203
+failed with gapSize 1203 1202 0 -150
+curidx: 1204
+failed with gapSize 1204 1203 0 -30
+curidx: 1205
+failed with gapSize 1205 1204 0 -750
+curidx: 1206
+failed with gapSize 1206 1205 106666 106350
+curidx: 1207
+failed with gapSize 1207 1206 103810 104684
+curidx: 1208
+failed with gapSize 1208 1207 61270 63497
+curidx: 1209
+failed with gapSize 1209 1208 0 -160
+curidx: 1210
+failed with gapSize 1210 1209 0 -400
+curidx: 1211
+failed with gapSize 1211 1210 0 -80
+curidx: 1212
+failed with gapSize 1212 1211 0 -120
+curidx: 1213
+failed with gapSize 1213 1212 31624 31728
+curidx: 1214
+failed with blockorder 1214 1213
+failed with gapSize 1214 1213 0 -541
+curidx: 1215
+failed with gapSize 1215 1214 1 541
+curidx: 1216
+failed with gapSize 1216 1215 268529 272266
+curidx: 1217
+failed with gapSize 1217 1216 66119 65846
+curidx: 1218
+failed with gapSize 1218 1217 216964 217918
+curidx: 1219
+failed with gapSize 1219 1218 241 -55
+curidx: 1220
+can merge 1219 1220
+curidx: 1221
+failed with gapSize 1221 1220 6 -26
+curidx: 1222
+failed with gapSize 1222 1221 93 93
+curidx: 1223
+failed with blockorder 1223 1222
+failed with gapSize 1223 1222 0 -204
+curidx: 1224
+failed with gapSize 1224 1223 27 0
+curidx: 1225
+failed with blockorder 1225 1224
+failed with gapSize 1225 1224 -200 -364
+curidx: 1226
+failed with gapSize 1226 1225 173 165
+curidx: 1227
+failed with blockorder 1227 1226
+failed with gapSize 1227 1226 0 -300
+curidx: 1228
+failed with gapSize 1228 1227 171068 171998
+curidx: 1229
+failed with gapSize 1229 1228 3213 3249
+curidx: 1230
+failed with gapSize 1230 1229 11410 11386
+curidx: 1231
+failed with gapSize 1231 1230 854 1258
+curidx: 1232
+failed with gapSize 1232 1231 186 198
+curidx: 1233
+failed with gapSize 1233 1232 717 134
+curidx: 1234
+failed with gapSize 1234 1233 648 -174
+curidx: 1235
+failed with gapSize 1235 1234 185484 186967
+curidx: 1236
+failed with gapSize 1236 1235 149624 154864
+curidx: 1237
+failed with gapSize 1237 1236 104 104
+curidx: 1238
+failed with gapSize 1238 1237 175052 175507
+curidx: 1239
+failed with gapSize 1239 1238 20632 20965
+curidx: 1240
+can merge 1239 1240
+curidx: 1241
+failed with gapSize 1241 1240 689 686
+curidx: 1242
+failed with gapSize 1242 1241 1237 20559
+curidx: 1243
+failed with blockorder 1243 1242
+failed with gapSize 1243 1242 0 -19122
+curidx: 1244
+failed with gapSize 1244 1243 1163 25574
+curidx: 1245
+failed with gapSize 1245 1244 444 721
+curidx: 1246
+failed with blockorder 1246 1245
+failed with gapSize 1246 1245 243 -23282
+curidx: 1247
+failed with gapSize 1247 1246 923 34432
+curidx: 1248
+failed with gapSize 1248 1247 156 597
+curidx: 1249
+can merge 1248 1249
+curidx: 1250
+failed with gapSize 1250 1249 473 1440
+curidx: 1251
+failed with gapSize 1251 1250 1362 9975
+curidx: 1252
+failed with gapSize 1252 1251 1955 9534
+curidx: 1253
+failed with gapSize 1253 1252 1 2644
+curidx: 1254
+failed with gapSize 1254 1253 7194 32800
+curidx: 1255
+failed with gapSize 1255 1254 47 87
+curidx: 1256
+failed with gapSize 1256 1255 1406 1609
+curidx: 1257
+can merge 1256 1257
+curidx: 1258
+failed with gapSize 1258 1257 3107 4551
+curidx: 1259
+failed with gapSize 1259 1258 1634 1634
+curidx: 1260
+failed with gapSize 1260 1259 12781 14847
+curidx: 1261
+failed with gapSize 1261 1260 67495 25114
+curidx: 1262
+failed with gapSize 1262 1261 87393 102447
+curidx: 1263
+can merge 1262 1263
+curidx: 1264
+failed with gapSize 1264 1263 2319 2311
+curidx: 1265
+failed with gapSize 1265 1264 -243 17
+curidx: 1266
+failed with blockorder 1266 1265
+failed with gapSize 1266 1265 0 -104
+curidx: 1267
+failed with blockorder 1267 1266
+failed with gapSize 1267 1266 0 -104
+curidx: 1268
+failed with gapSize 1268 1267 122595 123350
+curidx: 1269
+failed with gapSize 1269 1268 1889 2064
+curidx: 1270
+can merge 1269 1270
+curidx: 1271
+failed with blockorder 1271 1270
+failed with gapSize 1271 1270 0 -733
+curidx: 1272
+failed with gapSize 1272 1271 188747 190355
+curidx: 1273
+failed with gapSize 1273 1272 0 -48
+curidx: 1274
+failed with gapSize 1274 1273 0 -72
+curidx: 1275
+failed with gapSize 1275 1274 406425 412425
+curidx: 1276
+failed with gapSize 1276 1275 19444 21081
+curidx: 1277
+failed with gapSize 1277 1276 48628 48567
+curidx: 1278
+failed with gapSize 1278 1277 3056 3042
+curidx: 1279
+failed with gapSize 1279 1278 356032 357880
+curidx: 1280
+failed with gapSize 1280 1279 515218 516765
+curidx: 1281
+failed with gapSize 1281 1280 134146 134624
+curidx: 1282
+failed with gapSize 1282 1281 305 167
+curidx: 1283
+failed with gapSize 1283 1282 16827 16902
+curidx: 1284
+failed with gapSize 1284 1283 637484 640631
+curidx: 1285
+failed with blockorder 1285 1284
+failed with gapSize 1285 1284 351772 -4502714
+curidx: 1286
+failed with synteny 1286 1285
+failed with gapSize 1286 1285 350126 242537467
+curidx: 1287
+failed with gapSize 1287 1286 233 236
+curidx: 1288
+failed with synteny 1288 1287
+failed with gapSize 1288 1287 5754 -237318426
+curidx: 1289
+failed with gapSize 1289 1288 2288806 2294836
+curidx: 1290
+failed with synteny 1290 1289
+failed with gapSize 1290 1289 4649654 227862278
+curidx: 1291
+failed with synteny 1291 1290
+failed with gapSize 1291 1290 0 -223227560
+curidx: 1292
+failed with synteny 1292 1291
+failed with gapSize 1292 1291 0 223054620
+curidx: 1293
+failed with gapSize 1293 1292 227 227
+curidx: 1294
+failed with gapSize 1294 1293 36141 38803
+curidx: 1295
+failed with gapSize 1295 1294 58175 125815
+curidx: 1296
+failed with gapSize 1296 1295 29153 29204
+curidx: 1297
+failed with gapSize 1297 1296 102 0
+curidx: 1298
+failed with synteny 1298 1297
+failed with gapSize 1298 1297 -41205 -223098461
+curidx: 1299
+failed with synteny 1299 1298
+failed with gapSize 1299 1298 52395 223109668
+curidx: 1300
+failed with gapSize 1300 1299 2040 2040
+curidx: 1301
+failed with gapSize 1301 1300 93880 91302
+curidx: 1302
+failed with synteny 1302 1301
+failed with gapSize 1302 1301 265343 -222931777
+curidx: 1303
+failed with gapSize 1303 1302 1356322 1358288
+curidx: 1304
+failed with synteny 1304 1303
+failed with gapSize 1304 1303 1786512 217606902
+curidx: 1305
+failed with synteny 1305 1304
+failed with gapSize 1305 1304 494758 -214957903
+curidx: 1306
+failed with blockorder 1306 1305
+failed with gapSize 1306 1305 0 -360
+curidx: 1307
+failed with gapSize 1307 1306 1818772 1827238
+curidx: 1308
+failed with gapSize 1308 1307 165 208
+curidx: 1309
+failed with synteny 1309 1308
+failed with gapSize 1309 1308 2372280 213411891
+curidx: 1310
+failed with synteny 1310 1309
+failed with gapSize 1310 1309 0 -215546628
+curidx: 1311
+failed with synteny 1311 1310
+failed with gapSize 1311 1310 26251 88948501
+curidx: 1312
+failed with gapSize 1312 1311 1055 1077
+curidx: 1313
+failed with gapSize 1313 1312 2532045 96571457
+curidx: 1314
+failed with gapSize 1314 1313 271 355
+curidx: 1315
+failed with gapSize 1315 1314 2647763 19634419
+curidx: 1316
+failed with blockorder 1316 1315
+failed with gapSize 1316 1315 3080810 -3430109
+curidx: 1317
+failed with synteny 1317 1316
+failed with gapSize 1317 1316 648386 -188258547
+curidx: 1318
+failed with gapSize 1318 1317 6168436 6187751
+curidx: 1319
+failed with gapSize 1319 1318 144192 144288
+curidx: 1320
+failed with gapSize 1320 1319 4842955 4850358
+curidx: 1321
+failed with synteny 1321 1320
+failed with gapSize 1321 1320 2062009 163520995
+curidx: 1322
+failed with synteny 1322 1321
+failed with gapSize 1322 1321 545201 -160913257
+curidx: 1323
+failed with gapSize 1323 1322 817 817
+curidx: 1324
+failed with gapSize 1324 1323 3568105 3575933
+curidx: 1325
+failed with gapSize 1325 1324 5390771 5393692
+curidx: 1326
+failed with blockorder 1326 1325
+failed with gapSize 1326 1325 1997 -2393
+curidx: 1327
+failed with gapSize 1327 1326 2407833 2413217
+curidx: 1328
+failed with synteny 1328 1327
+failed with gapSize 1328 1327 16792223 31966012
+curidx: 1329
+failed with synteny 1329 1328
+failed with gapSize 1329 1328 43946 -15177391
+curidx: 1330
+failed with gapSize 1330 1329 6069677 6073479
+curidx: 1331
+failed with gapSize 1331 1330 1914905 1913664
+curidx: 1332
+failed with gapSize 1332 1331 1715684 1715767
+curidx: 1333
+failed with gapSize 1333 1332 13203581 13214065
+curidx: 1334
+failed with gapSize 1334 1333 29590 29490
+curidx: 1335
+failed with gapSize 1335 1334 7763570 7764448
+curidx: 1336
+failed with gapSize 1336 1335 139173 139217
+curidx: 1337
+failed with synteny 1337 1336
+failed with gapSize 1337 1336 5047909 36858558
+curidx: 1338
+failed with gapSize 1338 1337 14560 14538
+curidx: 1339
+failed with gapSize 1339 1338 65710 65696
+curidx: 1340
+failed with gapSize 1340 1339 222 222
+curidx: 1341
+failed with gapSize 1341 1340 222 222
+curidx: 1342
+failed with synteny 1342 1341
+failed with gapSize 1342 1341 1299482 -30360153
+curidx: 1343
+failed with gapSize 1343 1342 1112 29725
+curidx: 1344
+failed with gapSize 1344 1343 0 6002
+curidx: 1345
+can merge 1344 1345
+curidx: 1346
+failed with gapSize 1346 1345 327 26
+curidx: 1347
+failed with gapSize 1347 1346 618 371
+curidx: 1348
+failed with blockorder 1348 1347
+failed with gapSize 1348 1347 -1907 -25956
+curidx: 1349
+failed with gapSize 1349 1348 457 413
+curidx: 1350
+failed with gapSize 1350 1349 533 533
+curidx: 1351
+failed with gapSize 1351 1350 1 0
+curidx: 1352
+failed with blockorder 1352 1351
+failed with gapSize 1352 1351 0 -14761
+curidx: 1353
+failed with gapSize 1353 1352 32 268
+curidx: 1354
+failed with gapSize 1354 1353 47 262
+curidx: 1355
+failed with gapSize 1355 1354 37 17
+curidx: 1356
+failed with synteny 1356 1355
+failed with gapSize 1356 1355 3368407 84244266
+curidx: 1357
+failed with gapSize 1357 1356 40 0
+curidx: 1358
+failed with gapSize 1358 1357 48 0
+curidx: 1359
+failed with gapSize 1359 1358 48 0
+curidx: 1360
+failed with synteny 1360 1359
+failed with gapSize 1360 1359 -1344 -147823888
+curidx: 1361
+failed with gapSize 1361 1360 88 86
+curidx: 1362
+failed with gapSize 1362 1361 629 707
+curidx: 1363
+failed with gapSize 1363 1362 7428453 74392687
+curidx: 1364
+failed with synteny 1364 1363
+failed with gapSize 1364 1363 326192 -16625899
+curidx: 1365
+failed with gapSize 1365 1364 0 1569
+curidx: 1366
+failed with gapSize 1366 1365 1522 4744
+curidx: 1367
+failed with gapSize 1367 1366 0 1655
+curidx: 1368
+failed with gapSize 1368 1367 0 3727
+curidx: 1369
+failed with gapSize 1369 1368 0 3203
+curidx: 1370
+failed with gapSize 1370 1369 6 807
+curidx: 1371
+failed with gapSize 1371 1370 -4420 128454202
+curidx: 1372
+failed with gapSize 1372 1371 0 1558
+curidx: 1373
+failed with blockorder 1373 1372
+failed with gapSize 1373 1372 7715 -128426572
+curidx: 1374
+failed with gapSize 1374 1373 0 4770
+curidx: 1375
+failed with gapSize 1375 1374 947 947
+curidx: 1376
+failed with synteny 1376 1375
+failed with gapSize 1376 1375 780348 17683702
+curidx: 1377
+failed with blockorder 1377 1376
+failed with gapSize 1377 1376 232462 -15120
+curidx: 1378
+failed with gapSize 1378 1377 12 336
+curidx: 1379
+failed with gapSize 1379 1378 245744 -162
+curidx: 1380
+failed with synteny 1380 1379
+failed with gapSize 1380 1379 3072852 -7739620
+curidx: 1381
+failed with gapSize 1381 1380 909 4004182
+curidx: 1382
+failed with gapSize 1382 1381 0 2679
+curidx: 1383
+failed with blockorder 1383 1382
+failed with gapSize 1383 1382 0 -4000796
+curidx: 1384
+failed with synteny 1384 1383
+failed with gapSize 1384 1383 17998885 25750408
+curidx: 1385
+failed with gapSize 1385 1384 910 998971
+curidx: 1386
+failed with blockorder 1386 1385
+failed with gapSize 1386 1385 6192 -986834
+curidx: 1387
+failed with blockorder 1387 1386
+failed with gapSize 1387 1386 57 -5166009
+curidx: 1388
+failed with blockorder 1388 1387
+failed with gapSize 1388 1387 8129 -3998243
+curidx: 1389
+failed with synteny 1389 1388
+failed with gapSize 1389 1388 1391 -16621012
+curidx: 1390
+failed with gapSize 1390 1389 178 579
+curidx: 1391
+failed with gapSize 1391 1390 7 5480
+curidx: 1392
+failed with synteny 1392 1391
+failed with gapSize 1392 1391 0 16606085
+curidx: 1393
+failed with gapSize 1393 1392 0 1743
+curidx: 1394
+failed with gapSize 1394 1393 26 0
+curidx: 1395
+failed with blockorder 1395 1394
+failed with gapSize 1395 1394 -671 -4211
+curidx: 1396
+failed with gapSize 1396 1395 645 622
+curidx: 1397
+failed with gapSize 1397 1396 0 3336
+curidx: 1398
+failed with blockorder 1398 1397
+failed with gapSize 1398 1397 6051 -5665
+curidx: 1399
+failed with gapSize 1399 1398 0 3998267
+curidx: 1400
+failed with gapSize 1400 1399 82 0
+curidx: 1401
+failed with gapSize 1401 1400 3055 0
+curidx: 1402
+failed with blockorder 1402 1401
+failed with gapSize 1402 1401 -10630 -9597
+curidx: 1403
+failed with blockorder 1403 1402
+failed with gapSize 1403 1402 2260 -3997724
+curidx: 1404
+failed with gapSize 1404 1403 0 3997749
+curidx: 1405
+failed with blockorder 1405 1404
+failed with gapSize 1405 1404 0 -3997790
+curidx: 1406
+failed with gapSize 1406 1405 52 0
+curidx: 1407
+failed with gapSize 1407 1406 49 0
+curidx: 1408
+failed with gapSize 1408 1407 -617 3997154
+curidx: 1409
+failed with gapSize 1409 1408 510 485
+curidx: 1410
+failed with blockorder 1410 1409
+failed with gapSize 1410 1409 5239 -4000674
+curidx: 1411
+failed with gapSize 1411 1410 0 3997790
+curidx: 1412
+failed with blockorder 1412 1411
+failed with gapSize 1412 1411 0 -3996041
+curidx: 1413
+failed with gapSize 1413 1412 0 3995894
+curidx: 1414
+failed with synteny 1414 1413
+failed with gapSize 1414 1413 29 -20621410
+curidx: 1415
+failed with blockorder 1415 1414
+failed with gapSize 1415 1414 0 -7683939
+curidx: 1416
+failed with gapSize 1416 1415 0 11688984
+curidx: 1417
+failed with gapSize 1417 1416 4632 3
+curidx: 1418
+failed with blockorder 1418 1417
+failed with gapSize 1418 1417 -6048 -11690312
+curidx: 1419
+failed with gapSize 1419 1418 0 2000
+curidx: 1420
+failed with gapSize 1420 1419 3102 7683893
+curidx: 1421
+failed with gapSize 1421 1420 0 1377
+curidx: 1422
+failed with gapSize 1422 1421 49 0
+curidx: 1423
+can merge 1422 1423
+curidx: 1424
+failed with gapSize 1424 1423 0 5000
+curidx: 1425
+failed with gapSize 1425 1424 49 0
+curidx: 1426
+failed with blockorder 1426 1425
+failed with gapSize 1426 1425 -7084 -13475
+curidx: 1427
+failed with gapSize 1427 1426 6171 4007994
+curidx: 1428
+failed with gapSize 1428 1427 815 825
+curidx: 1429
+failed with gapSize 1429 1428 78 0
+curidx: 1430
+failed with blockorder 1430 1429
+failed with gapSize 1430 1429 -1185 -3304
+curidx: 1431
+failed with synteny 1431 1430
+failed with gapSize 1431 1430 2386 24273548
+curidx: 1432
+failed with blockorder 1432 1431
+failed with gapSize 1432 1431 1316 -7673436
+curidx: 1433
+failed with gapSize 1433 1432 22 12
+curidx: 1434
+failed with gapSize 1434 1433 0 7675651
+curidx: 1435
+failed with blockorder 1435 1434
+failed with gapSize 1435 1434 3781 -7671096
+curidx: 1436
+failed with gapSize 1436 1435 9 9
+curidx: 1437
+failed with synteny 1437 1436
+failed with gapSize 1437 1436 532847 -30398186
+curidx: 1438
+failed with gapSize 1438 1437 276258 17437248
+curidx: 1439
+failed with synteny 1439 1438
+failed with gapSize 1439 1438 181 20769175
+curidx: 1440
+failed with synteny 1440 1439
+failed with gapSize 1440 1439 25932 -37903554
+curidx: 1441
+failed with gapSize 1441 1440 20 20
+curidx: 1442
+failed with gapSize 1442 1441 369 370
+curidx: 1443
+failed with gapSize 1443 1442 20 20
+curidx: 1444
+failed with gapSize 1444 1443 34550 53800
+curidx: 1445
+failed with gapSize 1445 1444 43154 43332
+curidx: 1446
+failed with gapSize 1446 1445 79789 79774
+curidx: 1447
+failed with gapSize 1447 1446 60281 60287
+curidx: 1448
+failed with gapSize 1448 1447 5304 4856
+curidx: 1449
+failed with gapSize 1449 1448 64493 64428
+curidx: 1450
+failed with gapSize 1450 1449 6529 6519
+curidx: 1451
+failed with gapSize 1451 1450 76638 75915
+curidx: 1452
+failed with gapSize 1452 1451 57 57
+curidx: 1453
+failed with gapSize 1453 1452 68 100
+curidx: 1454
+failed with gapSize 1454 1453 109394 963782
+curidx: 1455
+failed with blockorder 1455 1454
+failed with gapSize 1455 1454 73644 -780586
+curidx: 1456
+failed with gapSize 1456 1455 1517 4833
+curidx: 1457
+failed with gapSize 1457 1456 56230 21830433
+curidx: 1458
+failed with synteny 1458 1457
+failed with gapSize 1458 1457 0 17027018
+curidx: 1459
+failed with synteny 1459 1458
+failed with gapSize 1459 1458 418033 -44289858
+curidx: 1460
+failed with synteny 1460 1459
+failed with gapSize 1460 1459 0 44707904
+curidx: 1461
+failed with gapSize 1461 1460 0 1573
+curidx: 1462
+failed with synteny 1462 1461
+failed with gapSize 1462 1461 1047 -44711603
+curidx: 1463
+failed with synteny 1463 1462
+failed with gapSize 1463 1462 0 44712646
+curidx: 1464
+failed with gapSize 1464 1463 1 1
+curidx: 1465
+failed with gapSize 1465 1464 0 1573
+curidx: 1466
+failed with synteny 1466 1465
+failed with gapSize 1466 1465 23776 -44693686
+curidx: 1467
+failed with gapSize 1467 1466 7 7
+curidx: 1468
+failed with synteny 1468 1467
+failed with gapSize 1468 1467 20793 44747813
+curidx: 1469
+failed with gapSize 1469 1468 15 15
+curidx: 1470
+failed with synteny 1470 1469
+failed with gapSize 1470 1469 3181 -44747634
+curidx: 1471
+failed with gapSize 1471 1470 3187 3183
+curidx: 1472
+failed with gapSize 1472 1471 156077 63252913
+curidx: 1473
+failed with synteny 1473 1472
+failed with gapSize 1473 1472 548314 -17816773
+curidx: 1474
+failed with synteny 1474 1473
+failed with gapSize 1474 1473 47030 -17647669
+curidx: 1475
+failed with blockorder 1475 1474
+failed with gapSize 1475 1474 0 -27779666
+curidx: 1476
+failed with gapSize 1476 1475 6291 0
+curidx: 1477
+failed with gapSize 1477 1476 3 401
+curidx: 1478
+can merge 1477 1478
+curidx: 1479
+can merge 1478 1479
+curidx: 1480
+failed with gapSize 1480 1479 1358 0
+curidx: 1481
+failed with gapSize 1481 1480 312 0
+curidx: 1482
+failed with gapSize 1482 1481 58177 12
+curidx: 1483
+can merge 1482 1483
+curidx: 1484
+can merge 1483 1484
+curidx: 1485
+failed with gapSize 1485 1484 0 3069
+curidx: 1486
+failed with gapSize 1486 1485 0 1619
+curidx: 1487
+failed with gapSize 1487 1486 0 3083
+curidx: 1488
+failed with gapSize 1488 1487 0 1629
+curidx: 1489
+failed with gapSize 1489 1488 0 3093
+curidx: 1490
+failed with gapSize 1490 1489 0 1617
+curidx: 1491
+failed with gapSize 1491 1490 0 4702
+curidx: 1492
+failed with gapSize 1492 1491 -2423528 25401422
+curidx: 1493
+failed with synteny 1493 1492
+failed with gapSize 1493 1492 95099 17788258
+curidx: 1494
+failed with gapSize 1494 1493 14710 14712
+curidx: 1495
+failed with gapSize 1495 1494 2373 2373
+curidx: 1496
+failed with gapSize 1496 1495 3 719
+curidx: 1497
+failed with synteny 1497 1496
+failed with gapSize 1497 1496 2251954 -43266846
+curidx: 1498
+failed with gapSize 1498 1497 40 40
+curidx: 1499
+failed with gapSize 1499 1498 30 44
+curidx: 1500
+failed with gapSize 1500 1499 13460 13469
+curidx: 1501
+failed with gapSize 1501 1500 464640 25717982
+curidx: 1502
+failed with blockorder 1502 1501
+failed with gapSize 1502 1501 0 -25739835
+curidx: 1503
+failed with synteny 1503 1502
+failed with gapSize 1503 1502 0 40497707
+curidx: 1504
+failed with gapSize 1504 1503 25 0
+curidx: 1505
+failed with gapSize 1505 1504 32 0
+curidx: 1506
+failed with gapSize 1506 1505 40 0
+curidx: 1507
+failed with synteny 1507 1506
+failed with gapSize 1507 1506 -2313 -40499914
+curidx: 1508
+failed with gapSize 1508 1507 10 10
+curidx: 1509
+failed with gapSize 1509 1508 1104 1104
+curidx: 1510
+failed with gapSize 1510 1509 11757 25748424
+curidx: 1511
+failed with gapSize 1511 1510 0 6356
+curidx: 1512
+failed with synteny 1512 1511
+failed with gapSize 1512 1511 313797 20587361
+curidx: 1513
+failed with gapSize 1513 1512 23989 23989
+curidx: 1514
+failed with synteny 1514 1513
+failed with gapSize 1514 1513 52726 -20162919
+curidx: 1515
+failed with synteny 1515 1514
+failed with gapSize 1515 1514 5718452 25944816
+curidx: 1516
+failed with gapSize 1516 1515 60 55
+curidx: 1517
+failed with gapSize 1517 1516 0 -360
+curidx: 1518
+can merge 1517 1518
+curidx: 1519
+failed with gapSize 1519 1518 5589211 5586916
+curidx: 1520
+failed with gapSize 1520 1519 670967 781710
+curidx: 1521
+failed with gapSize 1521 1520 128140 306515
+curidx: 1522
+failed with gapSize 1522 1521 1181156 1099235
+curidx: 1523
+failed with gapSize 1523 1522 277045 277377
+curidx: 1524
+failed with gapSize 1524 1523 3426271 3427717
+curidx: 1525
+failed with gapSize 1525 1524 86 0
+curidx: 1526
+failed with blockorder 1526 1525
+failed with gapSize 1526 1525 -93 -257
+curidx: 1527
+failed with gapSize 1527 1526 30 0
+curidx: 1528
+failed with blockorder 1528 1527
+failed with gapSize 1528 1527 -56 -54
+curidx: 1529
+failed with gapSize 1529 1528 4746730 4757446
+curidx: 1530
+failed with gapSize 1530 1529 4921972 4920887
+curidx: 1531
+failed with gapSize 1531 1530 245 212
+curidx: 1532
+failed with gapSize 1532 1531 76218 76053
+curidx: 1533
+failed with gapSize 1533 1532 9211546 9213364
+curidx: 1534
+failed with synteny 1534 1533
+failed with gapSize 1534 1533 2076435 -123241043
+curidx: 1535
+failed with synteny 1535 1534
+failed with gapSize 1535 1534 7576511 132883278
+curidx: 1536
+failed with blockorder 1536 1535
+failed with gapSize 1536 1535 16 -189
+curidx: 1537
+failed with gapSize 1537 1536 1685162 1685489
+curidx: 1538
+failed with gapSize 1538 1537 2508 31129
+curidx: 1539
+failed with gapSize 1539 1538 32 10011
+curidx: 1540
+failed with gapSize 1540 1539 0 7865
+curidx: 1541
+failed with gapSize 1541 1540 261 253
+curidx: 1542
+failed with gapSize 1542 1541 6984 396
+curidx: 1543
+failed with gapSize 1543 1542 7 391
+curidx: 1544
+failed with gapSize 1544 1543 3013 10
+curidx: 1545
+failed with gapSize 1545 1544 0 2131
+curidx: 1546
+failed with gapSize 1546 1545 2975 6338
+curidx: 1547
+failed with gapSize 1547 1546 349 29
+curidx: 1548
+failed with gapSize 1548 1547 145 152
+curidx: 1549
+failed with blockorder 1549 1548
+failed with gapSize 1549 1548 -52516 -101268
+curidx: 1550
+failed with gapSize 1550 1549 89 89
+curidx: 1551
+can merge 1550 1551
+curidx: 1552
+failed with gapSize 1552 1551 29318 106145
+curidx: 1553
+failed with blockorder 1553 1552
+failed with gapSize 1553 1552 14660 -141256
+curidx: 1554
+failed with gapSize 1554 1553 682 626
+curidx: 1555
+failed with gapSize 1555 1554 756 752
+curidx: 1556
+failed with gapSize 1556 1555 87 88
+curidx: 1557
+failed with gapSize 1557 1556 1198 1198
+curidx: 1558
+failed with gapSize 1558 1557 4068056 4063335
+curidx: 1559
+failed with gapSize 1559 1558 1480527 1485672
+curidx: 1560
+failed with gapSize 1560 1559 66595 66239
+curidx: 1561
+failed with gapSize 1561 1560 2012646 2015453
+curidx: 1562
+failed with blockorder 1562 1561
+failed with gapSize 1562 1561 0 -50
+curidx: 1563
+failed with gapSize 1563 1562 0 -25
+curidx: 1564
+failed with gapSize 1564 1563 0 -25
+curidx: 1565
+failed with gapSize 1565 1564 0 -25
+curidx: 1566
+failed with gapSize 1566 1565 0 -25
+curidx: 1567
+failed with gapSize 1567 1566 0 -25
+curidx: 1568
+failed with gapSize 1568 1567 0 -25
+curidx: 1569
+failed with synteny 1569 1568
+failed with gapSize 1569 1568 738246 -159822318
+curidx: 1570
+failed with synteny 1570 1569
+failed with gapSize 1570 1569 772054 161332050
+curidx: 1571
+failed with gapSize 1571 1570 1562895 1545833
+curidx: 1572
+failed with gapSize 1572 1571 0 18582
+curidx: 1573
+failed with gapSize 1573 1572 1498 2
+curidx: 1574
+failed with gapSize 1574 1573 1 116500
+curidx: 1575
+failed with blockorder 1575 1574
+failed with gapSize 1575 1574 -15173 -148780
+curidx: 1576
+failed with gapSize 1576 1575 3104433 3096459
+curidx: 1577
+failed with synteny 1577 1576
+failed with gapSize 1577 1576 11549226 -4529008
+curidx: 1578
+failed with gapSize 1578 1577 0 2007
+curidx: 1579
+failed with gapSize 1579 1578 76 2754
+curidx: 1580
+failed with gapSize 1580 1579 152 252
+curidx: 1581
+failed with gapSize 1581 1580 37 2325
+curidx: 1582
+failed with gapSize 1582 1581 30 152
+curidx: 1583
+failed with gapSize 1583 1582 38 25
+curidx: 1584
+failed with synteny 1584 1583
+failed with gapSize 1584 1583 87 -55649463
+curidx: 1585
+failed with synteny 1585 1584
+failed with gapSize 1585 1584 0 -83897718
+curidx: 1586
+failed with synteny 1586 1585
+failed with gapSize 1586 1585 1351760 156969970
+curidx: 1587
+failed with gapSize 1587 1586 0 -49166
+curidx: 1588
+failed with gapSize 1588 1587 757607 756828
+curidx: 1589
+failed with gapSize 1589 1588 2419035 2418380
+curidx: 1590
+failed with gapSize 1590 1589 0 -192
+curidx: 1591
+failed with gapSize 1591 1590 177928 178425
+curidx: 1592
+failed with gapSize 1592 1591 1198074 1198462
+curidx: 1593
+failed with gapSize 1593 1592 2141418 2332119
+curidx: 1594
+failed with gapSize 1594 1593 2099915 2106075
+curidx: 1595
+failed with gapSize 1595 1594 167 123
+curidx: 1596
+failed with blockorder 1596 1595
+failed with gapSize 1596 1595 8 -216
+curidx: 1597
+failed with synteny 1597 1596
+failed with gapSize 1597 1596 2363901 62107
+curidx: 1598
+failed with synteny 1598 1597
+failed with gapSize 1598 1597 514443 2822482
+curidx: 1599
+failed with gapSize 1599 1598 1461145 1481258
+curidx: 1600
+failed with gapSize 1600 1599 0 -49
+curidx: 1601
+failed with gapSize 1601 1600 2795729 2797740
+curidx: 1602
+failed with gapSize 1602 1601 180041 179682
+curidx: 1603
+failed with gapSize 1603 1602 350462 350472
+curidx: 1604
+failed with gapSize 1604 1603 125083 125263
+curidx: 1605
+failed with synteny 1605 1604
+failed with gapSize 1605 1604 2767015 -138541145
+curidx: 1606
+failed with synteny 1606 1605
+failed with gapSize 1606 1605 1299919 142611164
+curidx: 1607
+failed with gapSize 1607 1606 631 582
+curidx: 1608
+failed with gapSize 1608 1607 0 -95
+curidx: 1609
+failed with gapSize 1609 1608 108 108
+curidx: 1610
+failed with gapSize 1610 1609 1166719 1167781
+curidx: 1611
+failed with gapSize 1611 1610 984 644
+curidx: 1612
+failed with gapSize 1612 1611 170950 171069
+curidx: 1613
+failed with gapSize 1613 1612 0 -34
+curidx: 1614
+failed with gapSize 1614 1613 58468 62136
+curidx: 1615
+failed with gapSize 1615 1614 8996 9061
+curidx: 1616
+failed with gapSize 1616 1615 13288 13099
+curidx: 1617
+failed with gapSize 1617 1616 279969 280588
+curidx: 1618
+failed with gapSize 1618 1617 0 -576
+curidx: 1619
+failed with gapSize 1619 1618 15888 15357
+curidx: 1620
+failed with gapSize 1620 1619 0 -47
+curidx: 1621
+failed with gapSize 1621 1620 0 -47
+curidx: 1622
+failed with gapSize 1622 1621 0 -47
+curidx: 1623
+failed with gapSize 1623 1622 0 -47
+curidx: 1624
+failed with gapSize 1624 1623 0 -47
+curidx: 1625
+failed with gapSize 1625 1624 258674 260667
+curidx: 1626
+failed with blockorder 1626 1625
+failed with gapSize 1626 1625 0 -186
+curidx: 1627
+failed with gapSize 1627 1626 0 -31
+curidx: 1628
+failed with gapSize 1628 1627 0 -31
+curidx: 1629
+failed with gapSize 1629 1628 0 -31
+curidx: 1630
+failed with gapSize 1630 1629 0 -62
+curidx: 1631
+failed with gapSize 1631 1630 0 -31
+curidx: 1632
+failed with gapSize 1632 1631 0 -31
+curidx: 1633
+failed with gapSize 1633 1632 0 -31
+curidx: 1634
+failed with gapSize 1634 1633 143528 144365
+curidx: 1635
+failed with gapSize 1635 1634 34431 34515
+curidx: 1636
+failed with gapSize 1636 1635 32136 32081
+curidx: 1637
+failed with gapSize 1637 1636 57634 57864
+curidx: 1638
+failed with gapSize 1638 1637 0 -216
+curidx: 1639
+failed with gapSize 1639 1638 65 65
+curidx: 1640
+failed with gapSize 1640 1639 0 -72
+curidx: 1641
+failed with gapSize 1641 1640 0 -216
+curidx: 1642
+failed with gapSize 1642 1641 0 -90
+curidx: 1643
+failed with gapSize 1643 1642 0 -36
+curidx: 1644
+failed with gapSize 1644 1643 0 -198
+curidx: 1645
+failed with gapSize 1645 1644 0 -216
+curidx: 1646
+failed with gapSize 1646 1645 0 -126
+curidx: 1647
+failed with blockorder 1647 1646
+failed with gapSize 1647 1646 0 -162
+curidx: 1648
+failed with gapSize 1648 1647 0 -36
+curidx: 1649
+failed with gapSize 1649 1648 0 -72
+curidx: 1650
+failed with gapSize 1650 1649 0 -90
+curidx: 1651
+failed with gapSize 1651 1650 0 -198
+curidx: 1652
+failed with gapSize 1652 1651 0 -90
+curidx: 1653
+failed with gapSize 1653 1652 98177 99443
+curidx: 1654
+failed with gapSize 1654 1653 144502 148788
+curidx: 1655
+failed with synteny 1655 1654
+failed with gapSize 1655 1654 53053 -14589623
+curidx: 1656
+failed with synteny 1656 1655
+failed with gapSize 1656 1655 1542316 16330158
+curidx: 1657
+failed with blockorder 1657 1656
+failed with gapSize 1657 1656 21291 -123838
+curidx: 1658
+failed with blockorder 1658 1657
+failed with gapSize 1658 1657 0 -136
+curidx: 1659
+failed with gapSize 1659 1658 0 -68
+curidx: 1660
+failed with gapSize 1660 1659 0 -204
+curidx: 1661
+failed with gapSize 1661 1660 0 -68
+curidx: 1662
+failed with gapSize 1662 1661 0 -272
+curidx: 1663
+failed with gapSize 1663 1662 229 -43
+curidx: 1664
+failed with gapSize 1664 1663 0 -136
+curidx: 1665
+failed with gapSize 1665 1664 0 -204
+curidx: 1666
+failed with gapSize 1666 1665 0 -68
+curidx: 1667
+failed with gapSize 1667 1666 0 -136
+curidx: 1668
+failed with gapSize 1668 1667 3099 22326
+curidx: 1669
+failed with synteny 1669 1668
+failed with gapSize 1669 1668 131227 -247418410
+curidx: 1670
+failed with gapSize 1670 1669 24 24
+curidx: 1671
+failed with gapSize 1671 1670 100220 56250
+curidx: 1672
+failed with gapSize 1672 1671 73 73
+curidx: 1673
+failed with synteny 1673 1672
+failed with gapSize 1673 1672 108855 247696548

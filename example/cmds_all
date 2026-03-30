@@ -1,0 +1,3 @@
+chainNet ./chr1.chain  [chr_hg38.fa.sizes]  [chr_hs1.fa.sizes]   ./ChainNet/hg38/hs1/net/chr1.net query.net
+faToTwoBit in.fa [in2.fa in3.fa ...] out.2bit
+netToAxt  ./ChainNet/hg38/hs1/net/chr1.net  ./ChainNet/hg38/hs1/chain/chr1.chain [chr_hg38.fa.2bit] [chr_hs1.fa.2bit] ./AXT/chr1.axt
