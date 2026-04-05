@@ -165,23 +165,29 @@ perl ../../scripts/csTobed.pl ./Conserved.Segments hg38 hs1 > ./Conserved.Segmen
 
 ## Example
 
-The example/ directory contains a minimal working example. Due to file size constraints, large alignment files are hosted separately and can be downloaded as follows:
+Example input files used in this study are available on Figshare:
+https://doi.org/10.6084/m9.figshare.31884754
 
+You may download the files manually from the Figshare record and place them into the following directory structure:
 
 ```bash
-# AXT file
-wget -P example/AXT http://bioinfo.konkuk.ac.kr/practice/nayoung/synLiftOver/exampleData/chr1.axt
-
-# Chain and net files
-wget -P example/ChainNet/hg38/hs1/chain http://bioinfo.konkuk.ac.kr/practice/nayoung/synLiftOver/exampleData/chr1.chain
-wget -P example/ChainNet/hg38/hs1/net http://bioinfo.konkuk.ac.kr/practice/nayoung/synLiftOver/exampleData/chr1.net
-
-# Preprocessed AXT (rename after download)
-wget -O example/processed_AXT/chr1.axt http://bioinfo.konkuk.ac.kr/practice/nayoung/synLiftOver/exampleData/processed_chr1.axt
+example/
+├── AXT/
+│   └── chr1.axt
+├── ChainNet/
+│   └── hg38/hs1/
+│       ├── chain/
+│       │   └── chr1.chain
+│       └── net/
+│           └── chr1.net
+└── processed_AXT/
+    └── chr1.axt   # rename from processed_chr1.axt
 ```
 
-Once downloaded, run Step 1 and Step 2 commands from within the `example/` directory as shown above.
-
+Notes
+- processed_chr1.axt should be renamed to chr1.axt after download.
+- The provided files correspond to a representative chromosome-level example used for demonstration and testing.
+- These files are sufficient to reproduce the example workflow described in this repository.
 
 ## Contact
 
