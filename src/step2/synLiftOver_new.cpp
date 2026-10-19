@@ -73,6 +73,24 @@ struct axt_list {
     struct axt_list *next =nullptr;
 };
 
+// Only a recognized strand in BED column 6 is transformed. Preserve all
+// other fields, including legacy BED5 column 5 and BED12 extra columns.
+string outputInformation(const query &q, const string &alignmentDirection) {
+    if (alignmentDirection != "-") return q.rest_information;
+    size_t begin = 0;
+    for (int i = 0; i < 2; ++i) {
+        size_t separator = q.rest_information.find('\t', begin);
+        if (separator == string::npos) return q.rest_information;
+        begin = separator + 1;
+    }
+    size_t end = q.rest_information.find('\t', begin);
+    string strand = q.rest_information.substr(begin, end == string::npos ? end : end - begin);
+    if (strand != "+" && strand != "-") return q.rest_information;
+    string result = q.rest_information;
+    result[begin] = strand == "+" ? '-' : '+';
+    return result;
+}
+
 // 
 vector < query > readQuery(string& path){
     struct stat sb{};
@@ -108,28 +126,22 @@ vector < query > readQuery(string& path){
 }
 
 map < string, int > readSize(string& path){
-    struct stat sb{};
-    string res;
-    map < string, int > return_map;
-
-    FILE* input_file = fopen(path.c_str(), "r");
-    if (input_file == nullptr) {
-        perror("fopen");
+    ifstream file(path);
+    if (!file) { cerr << "ERROR: cannot read target sizes: " << path << endl; exit(1); }
+    map<string,int> sizes;
+    string line; int lineno = 0;
+    while (getline(file,line)) {
+        ++lineno;
+        if (line.find_first_not_of(" \t\r") == string::npos) continue;
+        istringstream row(line); string chr, extra; long long size;
+        if (!(row >> chr >> size) || (row >> extra) || size <= 0 || size > 2147483647LL || sizes.count(chr)) {
+            cerr << "ERROR: invalid or duplicate chromosome size at " << path << ":" << lineno << endl;
+            exit(1);
+        }
+        sizes[chr] = static_cast<int>(size);
     }
-
-    stat(path.c_str(), &sb);
-    res.resize(sb.st_size);
-    fread(const_cast<char*>(res.data()), sb.st_size, 1, input_file);
-    fclose(input_file);
-
-    vector <string> all_Size = SPLIT(res,'\n');
-    vector <string > tmp_arr;
-    int all_size_lines = all_Size.size();
-    for (int i = 0 ; i < all_size_lines ; i+=1){
-        tmp_arr=SPLIT(all_Size[i]);
-        return_map[tmp_arr[0]] = STR2INT(tmp_arr[1]);
-    }
-    return return_map;
+    if (file.bad() || sizes.empty()) { cerr << "ERROR: empty or unreadable target sizes: " << path << endl; exit(1); }
+    return sizes;
 }
 struct axt_list * readAxt(string path) { // axt should not have any blank lines 
     struct axt_list * return_axt = new axt_list();
@@ -181,43 +193,28 @@ struct axt_list * readAxt(string path) { // axt should not have any blank lines
     input_file.close();
     return return_axt;
 }
-void convertCdnt (string *refseq, string *tarseq, int refst, int tarst, int *liftTar1, int *liftTar2){
-    refst -= 1;
-    tarst -= 1;
-    int done1 = (*liftTar1);
-    int done2 = (*liftTar2);
-    int converted1 = 0;
-    int converted2 = 0;
-
-    if ((*refseq).length() != (*tarseq).length()){
-        cout <<"err" <<endl;
+bool convertCdnt(string *refseq, string *tarseq, int refst, int tarst, int *liftTar1, int *liftTar2){
+    const int wanted1 = *liftTar1, wanted2 = *liftTar2;
+    // Old callers use dummy=1 to request only one boundary. It must not
+    // be mistaken for completion of a genuine BED coordinate equal to 1.
+    bool done1 = false, done2 = false;
+    int converted1 = 0, converted2 = 0;
+    if(refseq->size() != tarseq->size()) { *liftTar1 = *liftTar2 = -1; return false; }
+    --refst; --tarst;
+    for(size_t idx = 0; idx <= refseq->size(); ++idx){
+        if(!done1 && wanted1 == refst){ converted1 = tarst; done1 = true; }
+        if(!done2 && wanted2 == refst){ converted2 = tarst; done2 = true; }
+        if(idx == refseq->size()) break;
+        if((*refseq)[idx] != '-') ++refst;
+        if((*tarseq)[idx] != '-') ++tarst;
     }
-    string gap = "-";
-    for(int idx = 0 ; idx <= (*refseq).length() ; idx ++ ){
-        if (done1 == refst){
-            converted1 = tarst;
-            done1 = 1;
-        }
-        if (done2 == refst){
-            converted2 = tarst;
-            done2 = 1;
-        }
-        if (done1 == 1 && done2 ==1){
-            (*liftTar1) = converted1;
-            (*liftTar2) = converted2;
-            break;
-        }
-
-        if ((*refseq)[idx] == '-'){
-            tarst ++;
-        }else if((*tarseq)[idx] == '-'){
-            refst ++;
-        }else{
-            refst ++;
-            tarst ++;
-        }
-    }
-    return;
+    *liftTar1 = done1 ? converted1 : -1;
+    *liftTar2 = done2 ? converted2 : -1;
+    return done1 && done2;
+}
+bool validOutput(int start, int end, const string &chr, const map<string,int> &sizes){
+    auto it = sizes.find(chr);
+    return it != sizes.end() && start >= 0 && start < end && end <= it->second;
 }
 
 void convertDir(int *liftTar1, int *liftTar2, int chr_size){
@@ -287,13 +284,19 @@ int processCase2(const vector<axt_list*> &stCandidates,const vector<axt_list*> &
             bool is_valid_pair = true;
             for (axt_list* other = allAxt; other != nullptr; other = other->next) {
                 if (other == stAxt || other == edAxt) continue;
+                // Conservative strict policy: reject a third block with
+                // positive-length intersection with either endpoint gap.
+                // AXT intervals are converted to half-open coordinates.
                 bool ref_in_between =
-                    (other->refStart >= stAxt->refEnd) ||
-                    (other->refEnd <= edAxt->refStart);
-
+                    stAxt->refEnd < edAxt->refStart - 1 &&
+                    other->refStart - 1 < edAxt->refStart - 1 &&
+                    other->refEnd > stAxt->refEnd;
                 bool query_in_between =
-                    (other->tarStart >= stAxt->tarEnd) ||
-                    (other->tarEnd <= edAxt->tarStart);
+                    other->tarChr == stAxt->tarChr &&
+                    other->tarDir == stAxt->tarDir &&
+                    stAxt->tarEnd < edAxt->tarStart - 1 &&
+                    other->tarStart - 1 < edAxt->tarStart - 1 &&
+                    other->tarEnd > stAxt->tarEnd;
 
                 if (ref_in_between || query_in_between) {
                     is_valid_pair = false;
@@ -311,20 +314,21 @@ int processCase2(const vector<axt_list*> &stCandidates,const vector<axt_list*> &
             convertCdnt(&stAxt->ref_seq, &stAxt->tar_seq,stAxt->refStart, stAxt->tarStart,&lift_st, &dummy);
             dummy = 1; 
             convertCdnt(&edAxt->ref_seq, &edAxt->tar_seq,edAxt->refStart, edAxt->tarStart,&lift_ed, &dummy);
+            if(lift_st < 0 || lift_ed < 0 || chr_size.find(edAxt->tarChr) == chr_size.end()) continue;
             if (edAxt->tarDir[0] == '-') {
                 convertDir(&lift_st, &lift_ed, chr_size[edAxt->tarChr]);
             }
-            if (lift_st >= lift_ed) {
+            if (!validOutput(lift_st, lift_ed, edAxt->tarChr, chr_size)) {
                 //cerr << "[Case2 warn] converted coords reversed or invalid\n";
                 continue;
             }
-            cout << edAxt->tarChr << "\t"<< lift_st << "\t"<< lift_ed << "\t"<< q.rest_information <<endl;
-            cerr <<q.chr<<"\t"<<q.start<<"\t"<<q.end<<"\t" << edAxt->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<q.rest_information<<endl;
+            cout << edAxt->tarChr << "\t"<< lift_st << "\t"<< lift_ed << "\t"<< outputInformation(q, edAxt->tarDir) <<endl;
+            cerr <<q.chr<<"\t"<<q.start<<"\t"<<q.end<<"\t" << edAxt->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<outputInformation(q, edAxt->tarDir)<<endl;
             return_value = 1;
             if(duplication_allow != 0){
                 idx ++;
             }else{
-                break;
+                return return_value;
             }
         }
     }
@@ -361,20 +365,21 @@ int processCase2_relaxed(const vector<axt_list*> &stCandidates,const vector<axt_
             convertCdnt(&stAxt->ref_seq, &stAxt->tar_seq,stAxt->refStart, stAxt->tarStart,&lift_st, &dummy);
             dummy = 1; 
             convertCdnt(&edAxt->ref_seq, &edAxt->tar_seq,edAxt->refStart, edAxt->tarStart,&lift_ed, &dummy);
+            if(lift_st < 0 || lift_ed < 0 || chr_size.find(edAxt->tarChr) == chr_size.end()) continue;
             if (edAxt->tarDir[0] == '-') {
                 convertDir(&lift_st, &lift_ed, chr_size[edAxt->tarChr]);
             }
-            if (lift_st >= lift_ed) {
+            if (!validOutput(lift_st, lift_ed, edAxt->tarChr, chr_size)) {
                 //cerr << "[Case2 warn] converted coords reversed or invalid\n";
                 continue;
             }
-            cout << edAxt->tarChr << "\t"<< lift_st << "\t"<< lift_ed << "\t"<< q.rest_information <<endl;
-            cerr <<q.chr<<"\t"<<q.start<<"\t"<<q.end<<"\t" << edAxt->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<q.rest_information<<endl;
+            cout << edAxt->tarChr << "\t"<< lift_st << "\t"<< lift_ed << "\t"<< outputInformation(q, edAxt->tarDir) <<endl;
+            cerr <<q.chr<<"\t"<<q.start<<"\t"<<q.end<<"\t" << edAxt->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<outputInformation(q, edAxt->tarDir)<<endl;
             return_value = 1;
             if(duplication_allow != 0){
                 idx ++;
             }else{
-                break;
+                return return_value;
             }
         }
     }
@@ -405,6 +410,15 @@ int main(int argc, char * argv[]){
     input_list = readQuery(f_query);
     chr_size = readSize(f_targetSize);
     thisChrAxt = readAxt(f_axt);
+    map<string,int> missing_sizes;
+    for (axt_list* cur = thisChrAxt; cur != NULL; cur = cur->next) {
+        if (chr_size.find(cur->tarChr) == chr_size.end()) ++missing_sizes[cur->tarChr];
+    }
+    for (const auto &entry : missing_sizes) {
+        cerr << "WARNING: target chromosome missing from size file: " << entry.first
+             << " (AXT blocks=" << entry.second << "); candidates using it are skipped" << endl;
+    }
+
     
     for(int i = 0 ; i < input_list.size(); i++){
         query &q = input_list[i];
@@ -418,15 +432,29 @@ int main(int argc, char * argv[]){
             if(ccase != 0){
                 case1_blocks.push_back(cur); 
                 case1_list.push_back(ccase); 
-            }else{
-                if ((cur->refStart -1) <= q.start && q.start <= cur->refEnd) { //0base - 1base comparing
+            }
+            { // A: collect endpoint candidates independently of single-block classification.
+                if ((cur->refStart -1) <= q.start && q.start < cur->refEnd) { //0base - 1base comparing
                     stCandidates.push_back(cur);
                 }
-                if ((cur->refStart-1) <= q.end && q.end <= cur->refEnd) {
+                if ((cur->refStart-1) < q.end && q.end <= cur->refEnd) {
                     edCandidates.push_back(cur);
                 }
             }
         }
+        // B: full containment first; preserve file order within each group.
+        vector<axt_list*> ordered_blocks;
+        vector<int> ordered_cases;
+        for (int pass = 0; pass < 2; ++pass) {
+            for (size_t k = 0; k < case1_blocks.size(); ++k) {
+                if ((case1_list[k] == 1) == (pass == 0)) {
+                    ordered_blocks.push_back(case1_blocks[k]);
+                    ordered_cases.push_back(case1_list[k]);
+                }
+            }
+        }
+        case1_blocks.swap(ordered_blocks);
+        case1_list.swap(ordered_cases);
         int case2_processed = 0;
         if(relax == 0){
             case2_processed = processCase2(stCandidates, edCandidates, q, chr_size, duplication_allow, thisChrAxt);
@@ -459,12 +487,14 @@ int main(int argc, char * argv[]){
                         lift_ed = block->tarEnd;
                         break;
                 }
+                if(lift_st < 0 || lift_ed < 0 || chr_size.find(block->tarChr) == chr_size.end()) { ++idx; continue; }
                 if (block->tarDir[0] == '-') {
                     convertDir(&lift_st, &lift_ed, chr_size[block->tarChr]);
                 }
+                if(!validOutput(lift_st, lift_ed, block->tarChr, chr_size)) { ++idx; continue; }
                 if(!(case2_processed == 1 && duplication_allow == 0)){
-                    cout << block->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<q.rest_information<<"\t"<<endl;
-                    cerr <<q.chr<<"\t"<<q.start<<"\t"<<q.end<<"\t" << block->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<q.rest_information<<endl;
+                    cout << block->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<outputInformation(q, block->tarDir)<<"\t"<<endl;
+                    cerr <<q.chr<<"\t"<<q.start<<"\t"<<q.end<<"\t" << block->tarChr<<"\t" <<lift_st << "\t" <<lift_ed <<"\t"<<outputInformation(q, block->tarDir)<<endl;
                 }
                 if(duplication_allow != 0){
                     idx ++;

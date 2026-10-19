@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 
 import sys
 import re 
@@ -35,7 +35,7 @@ def readSynteny(f_synteny):
         synteny_id = line[0]
         refchr = line[1]
         dict_refinfo[refchr][synteny_id] = [int(line[2]), int(line[3])]
-        dict_tarinfo[synteny_id] = [line[5], int(line[6]), int(line[7]), line[8]]
+        dict_tarinfo[synteny_id] = [line[5], int(line[6]), int(line[7]), "+" if line[4] == line[8] else "-"]
 
     return dict_refinfo, dict_tarinfo
 

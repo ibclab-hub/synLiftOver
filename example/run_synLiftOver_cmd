@@ -1,2 +1,1 @@
-perl ../src/step2/synLiftOver.pl  ./input.bed  ./fa/hs1.fa.size  ./out1  ./AXT/  0.95  out  0 0 &> log
-perl ../src/step2/synLiftOver.pl  ./input.bed  ./fa/hs1.fa.size  ./out2  ./processed_AXT/  0.95  out  0 0 &> log
+perl ../src/step2/synLiftOver.pl ./input.bed ./fa/hs1.fa.size ./outdir ./processed_AXT/ 0.95 out 0 0 > lift.out 2> lift.log

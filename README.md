@@ -1,194 +1,169 @@
 # synLiftOver
 
-**synLiftOver** is a synteny-aware coordinate conversion tool for transferring genomic annotations across genome assemblies. It improves annotation transfer robustness by combining synteny-guided alignment preprocessing with consistency-aware coordinate projection across single or multiple compatible alignment blocks.
-
-## Overview
-
-synLiftOver processes annotations through two steps:
-
-1. **Synteny-guided alignment preprocessing (Step 1)**  
-   Raw AXT alignment blocks are optionally filtered and/or merged using synteny block information.
-
-2. **Coordinate projection (Step 2)**  
-   Each query interval is projected onto the target assembly using one of two cases:
-   - **Case 1**: single-block projection
-   - **Case 2**: multi-block projection across compatible alignment blocks
-
-This design enables robust annotation transfer in regions where conventional liftover approaches may produce fragmented or inconsistent results due to locally inconsistent alignments.
+synLiftOver transfers genomic intervals across genome assemblies and species using synteny-guided alignment preprocessing and single-block or multi-block coordinate projection.
 
 ## Requirements
 
-- Python 3
-- Perl
-- C++ compiler
-- UCSC utilities: `chainNet`,`chainSplit`, `netSplit`, `netToAxt`, `faSize`, `faToTwoBit`
-- Pairwise genome alignment resources:
-  - AXT files (for projection)
-  - chain/net files (for synteny generation and AXT conversion)
+- Python 3, Perl, and a C++11 compiler
+- Pairwise alignments in AXT format and target chromosome sizes
+- Paired synteny intervals for optional alignment filtering and merging
 
-## Input formats
+The core runtime uses Python's standard library. Preparing alignment and synteny inputs may additionally require UCSC utilities and MakeBlocks, as described below.
 
-### Query annotation BED
+## Build
 
-Input annotations must be provided in tab-delimited BED format. The first three columns must be chromosome, start, and end. Additional columns are preserved in the output.
+From the repository root:
 
-```text
-chr1    10000    10200    gene1|exon1
+```bash
+bash compile.sh
 ```
 
-### AXT alignment files
+This creates `src/step2/synLiftOver.out`. Recompile on your machine before running.
 
-AXT files must be organized by chromosome:
+## Repository layout
+
+- `src/step1/`: synteny-guided AXT preprocessing
+- `src/step2/`: coordinate projection
+- `scripts/`: existing MakeBlocks executable and Conserved.Segments conversion script
+- `example/`: example commands, configuration, and input layout
+
+## Inputs
+
+### Query BED
+
+Use headerless, tab-delimited BED with 0-based, half-open, positive-length intervals:
 
 ```text
-example/AXT/chr1.axt
+chr1    10000    10200    feature1    0    +
 ```
 
-### Target assembly size file
+Additional metadata is preserved. A recognized `+` or `-` in BED column 6 is converted to target strand. For exon annotations, provide each exon as a separate interval. Coordinate-bearing extra fields, including BED12 block coordinates, are passed through rather than recalculated.
 
-A chromosome size file for the target assembly is required. This can be generated using:
+### Chromosome AXT files
+
+Place uncompressed AXT alignments in `AXT_DIR/chr1.axt`, with filenames matching source BED chromosome names. Keep each source chromosome in its own file and preserve unique numeric block IDs and block order. Use chromosome filenames without extra periods before `.axt` for preprocessing.
+
+AXT coordinates are interpreted as 1-based inclusive. Negative-strand target coordinates use the oriented target coordinate system. Paired alignment strings must have equal lengths.
+
+### Target chromosome sizes
+
+Provide a two-column file of target chromosome names and lengths. For example:
 
 ```bash
 faSize --detailed target.fa > target.fa.size
 ```
 
-### Synteny block BED file
+### Paired synteny intervals
 
-Synteny blocks must be provided in BED-like format:
+Use the nine-column format shown in `example/synteny/Conserved.Segments.bed`:
 
 ```text
 1   chr1   246414   297604   +   chr7   0   51210   +
 ```
 
-Fields: synteny ID, reference chromosome, reference start, reference end, reference strand, target chromosome, target start, target end, target strand.
-
-> **Note**  
-> In the manuscript workflow, synteny blocks were generated using MakeBlocks (embedded in RACA), followed by BED conversion using an in-house script. Precomputed example synteny files and wrapper scripts for MakeBlocks-based synteny generation are provided in the `example/` directory for reference.
-
-## AXT generation
-
-If chain/net files are available, AXT files can be generated using `netToAxt` on a per-chromosome basis before running synLiftOver.
+Columns are synteny ID, source chromosome/start/end/strand, and target chromosome/start/end/strand. Coordinates are forward 0-based, half-open. IDs must be unique. The relative alignment direction is positive when the two strand fields agree and negative otherwise.
 
 ## Step 1: Preprocess AXT alignments
 
-The following commands assume execution from within the `example/` directory.
+Run from `example/`:
 
 ```bash
 python3 ../src/step1/preprocess_axtFiltMerge.py \
     ./synteny/Conserved.Segments.bed \
-    ./AXT/ \
-    ./processed_AXT/ \
-    1000 \
-    0 \
-    1 &> preprocess.log
+    ./AXT/ ./processed_AXT/ \
+    1000 0 1 ./fa/hs1.fa.size \
+    > preprocess.out 2> preprocess.log
 ```
 
+Use a new output directory for each preprocessing run.
 
-#### Arguments:
-| Position | Description |
+| Position | Argument |
 |---|---|
-| 1 | Synteny BED file |
+| 1 | Paired synteny file |
 | 2 | Input AXT directory |
-| 3 | Output processed AXT directory |
-| 4 | Minimum gap size for merging |
-| 5 | Filter flag (0: disabled, 1: enabled) |
-| 6 | Merge flag (0: disabled, 1: enabled) |
+| 3 | Output AXT directory |
+| 4 | Exclusive upper limit for the target gap (`GAP`) |
+| 5 | Filter flag |
+| 6 | Merge flag |
+| 7 | Target chromosome sizes |
 
-#### Preprocessing modes
-
-| filter_flag | merge_flag | Mode |
-|---|---|---|
-| 0 | 0 | Raw |
+| Filter | Merge | Mode |
+|---:|---:|---|
+| 0 | 0 | Retain blocks without filtering or merging |
 | 1 | 0 | Filter |
-| 0 | 1 | Merge (default) |
-| 1 | 1 | Filter + Merge |
+| 0 | 1 | Merge |
+| 1 | 1 | Filter+Merge |
 
-## Step 2: Run coordinate projection
+For the original-alignment baseline, use `AXT/` directly in Step 2.
+
+**Filter** retains blocks contained within the same paired synteny interval on both genomes, with matching target chromosome and relative direction.
+
+**Merge** joins consecutive original block IDs assigned to the same synteny interval. Source blocks must be directly adjacent, target chromosome and direction must match, and the oriented target gap must satisfy `0 <= gap < GAP`. With `GAP=1000`, the maximum permitted target gap is 999 bp. Gaps are represented by target `N` and source `-` characters.
+
+**Filter+Merge** combines these operations. Filtering restricts the alignment context and may reduce both incorrect mappings and recovery. Merging can recover additional intervals or simplify an existing multi-block projection without changing its output.
+
+## Step 2: Project coordinates
+
+From `example/`, using the processed alignments:
 
 ```bash
 perl ../src/step2/synLiftOver.pl \
-    ./input.bed \
-    ./fa/hs1.fa.size \
-    ./outdir \
-    ./AXT/ \
-    0.95 \
-    out \
-    0 \
-    0 &> log
+    ./input.bed ./fa/hs1.fa.size ./outdir ./processed_AXT/ \
+    0.95 out 0 0 > lift.out 2> lift.log
 ```
 
-#### Arguments:
-| Position | Description |
+| Position | Argument |
 |---|---|
-| 1 | Input BED file |
-| 2 | Target assembly size file |
+| 1 | Source BED |
+| 2 | Target chromosome sizes |
 | 3 | Output directory |
 | 4 | AXT directory |
 | 5 | Minimum-match threshold |
-| 6 | Output prefix |
-| 7 | Duplication flag (0: no duplicates, 1: allow duplicates) |
-| 8 | Case 2 mode flag (0: strict, 1: relaxed) |
+| 6 | Output filename |
+| 7 | Allow multiple candidate outputs: `0` (default) or `1` |
+| 8 | Multi-block mode: `0` strict (default), `1` relaxed |
 
-**Case 2 mode guidance:**
-- Use **strict mode** (0) for same-species assembly pairs
-- Use **relaxed mode** (1) for cross-species transfers, where greater alignment fragmentation is expected
+The minimum-match parameter applies to source overlap for partial single-block candidates, using a strict `>` comparison. It is not an overall sequence-identity or target-coverage threshold.
 
+Strict and relaxed modes require compatible endpoint blocks on the same target chromosome and direction. Strict mode also excludes pairs with another block overlapping the intervening source or compatible target gap. Relaxed mode omits that exclusion. Strict mode is a starting point for same-species assembly transfers; relaxed mode can improve recovery in fragmented cross-species alignments. Choose according to the input alignments and desired recovery/consistency tradeoff.
 
-## Synteny generation (Optional)
+Multi-block candidates are attempted first. With multiple outputs disabled, an accepted multi-block result suppresses single-block output. Otherwise, fully contained single-block candidates precede partial candidates. Allowing multiple outputs reports candidate projections, not independently established biological orthologs.
 
-### Step 1. Prepare split chain/net files
+The mapped BED is written to `outdir/out`. Per-source-chromosome inputs, outputs, mapping logs, and warnings are kept under `outdir/tmp/`. Unmapped intervals are absent from the mapped BED. The wrapper runs one process per source chromosome and combines outputs in source-chromosome order. Use separate output directories for separate runs.
 
-MakeBlocks expects the ChainNet directory organized as:
+## Preparing alignments and synteny
+
+### AXT from chain/net
+
+Existing example commands are in `example/cmds_all`. With split chain/net files and source/target two-bit genomes, run `netToAxt` for each source chromosome. UCSC utilities such as `chainNet`, `chainSplit`, `netSplit`, `faSize`, and `faToTwoBit` can be used when preparing these inputs.
+
+### MakeBlocks synteny workflow
+
+The manuscript workflow uses MakeBlocks from RACA. The existing `scripts/run.Makeblocks` and `scripts/csTobed.pl` support the following example.
+
+Organize split chain/net inputs as:
 
 ```text
-query_species/
-└── target_species/
-    ├── chain/
-    │   └── chr*.chain
-    └── net/
-        └── chr*.net
+example/ChainNet/hg38/hs1/chain/chr1.chain
+example/ChainNet/hg38/hs1/net/chr1.net
 ```
 
-### Step 2. Run MakeBlocks
+From `example/synteny/`, edit `Makeblocks_config` for the input directories, species names, and resolution. The example uses `150000` bp.
 
 ```bash
-../../scripts/run.Makeblocks Makeblocks_config >& log
+../../scripts/run.Makeblocks Makeblocks_config > log 2>&1
+perl ../../scripts/csTobed.pl Conserved.Segments hg38 hs1 > Conserved.Segments.bed
 ```
 
-This produces a `Conserved.Segments` file.
+Use the resulting paired synteny file in Step 1. Precomputed example files are also available. Other synteny sources can be used after converting them to the paired forward-coordinate format above.
 
-### Step 3. Convert to BED format
+## Example data
 
-```bash
-perl ../../scripts/csTobed.pl ./Conserved.Segments hg38 hs1 > ./Conserved.Segments.bed
-```
-
-## Example
-
-Example input files used in this study are available on Figshare:
+Download the representative chromosome-level data from Figshare:
 https://doi.org/10.6084/m9.figshare.31884754
 
-You may download the files manually from the Figshare record and place them into the following directory structure:
-
-```bash
-example/
-├── AXT/
-│   └── chr1.axt
-├── ChainNet/
-│   └── hg38/hs1/
-│       ├── chain/
-│       │   └── chr1.chain
-│       └── net/
-│           └── chr1.net
-└── processed_AXT/
-    └── chr1.axt   # rename from processed_chr1.axt
-```
-
-Notes
-- processed_chr1.axt should be renamed to chr1.axt after download.
-- The provided files correspond to a representative chromosome-level example used for demonstration and testing.
-- These files are sufficient to reproduce the example workflow described in this repository.
+The AXT and chain/net files in this repository are empty placeholders. Populate `example/AXT/` and `example/ChainNet/` with the downloaded data. To use the provided processed alignment directly, rename `processed_chr1.axt` to `chr1.axt` and place it under `example/processed_AXT/`. To generate processed alignments yourself, choose a fresh output directory for Step 1.
 
 ## Contact
 
-For questions or issues, please open an issue on GitHub or contact the authors (qkrskdud0805@gmail.com).
+Open a GitHub issue or contact qkrskdud0805@gmail.com.
